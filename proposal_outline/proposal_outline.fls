@@ -46,6 +46,16 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 INPUT proposal_outline.aux
 INPUT proposal_outline.aux
 OUTPUT proposal_outline.aux
