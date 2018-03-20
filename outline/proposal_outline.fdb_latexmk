@@ -1,5 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1521562851 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521562851
+["pdflatex"] 1521566418 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521566418
+  "../figures/CR3BP_EarthMoon.png" 1521566157 113866 2011ee438e7fd163071bba64472c7654 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -20,7 +21,6 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1480098733 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1480098733 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1480098733 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1480098733 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -62,9 +62,9 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "proposal_outline.aux" 1521562851 154 fbf1b6b0a13cb4f3568786f9770bc9c7 ""
-  "proposal_outline.tex" 1521562851 2816 878acf97d876df844e7802e7b39a994f ""
+  "proposal_outline.aux" 1521566418 275 ad2d2a92f6b051b92bb35cea69933f65 ""
+  "proposal_outline.tex" 1521566418 2661 379cc7d42086680e71b430ea8ed81f1b ""
   (generated)
+  "proposal_outline.pdf"
   "proposal_outline.log"
   "proposal_outline.aux"
-  "proposal_outline.pdf"

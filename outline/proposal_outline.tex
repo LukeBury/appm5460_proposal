@@ -30,22 +30,29 @@
 
 \subsection{outline}
 \begin{itemize}
-	\item Intro
+	\item Intro (don)
 	  \begin{itemize}
 	  	\item In this proposal, we will be investigating homoclinic orbits in the Circular Restricted Three-Body Problem
 	  	\item (tie to competition history)
 	  	\item Homoclinic orbits are ... 
 	  	\item They are important because ...
 	  \end{itemize}
-	\item History / Lit Review
+	\item History / Lit Review (luke)
 	  \begin{itemize}
 	  	\item Competition basics ... 4 problems
 	  	\item 1st problem was n-body problem
-	  	\item Poincare went for 3-body since it was the first unsolved... settled for CR3BP
-	  	\item (description of CR3BP)
-	  	\item \color{red}$\ddot{x} =  2\dot{y} + x + \left(\dfrac{1-\mu}{r_1^3}-\dfrac{3R_1^2 J_{2,1}(1-\mu)}{2 r_1^7}(5z^2 - r_1^2)\right)(x_1- x) + \left(\dfrac{\mu}{r_2^3}-\dfrac{3 \mu R_2^2 J_{2,2}}{2 r_2^7}(5z^2 - r_2^2)\right)(x_2 - x)\nonumber\\
-		\ddot{y} = - 2\dot{x} + y\left(-\dfrac{1-\mu}{r_1^3} - \dfrac{\mu}{r_2^3} + \dfrac{3R_1^2 J_{2,1}(1-\mu)}{2 r_1^7}(5z^2 - r_1^2) + \dfrac{3 \mu R_2^2 J_{2,2}}{2 r_2^7}(5z^2 - r_2^2) + 1\right) \\
-		\ddot{z} = z\left(-\dfrac{1 - \mu}{r_1^3} - \dfrac{\mu}{r_2^3} + \dfrac{3R_1^2 J_{2,1}(1-\mu)}{2 r_1^7}(5z^2-3r_1^2) + \dfrac{3\mu R_2^2 J_{2,2}}{2 r_2^7}(5z^2-3r_2^2)\right)\nonumber$\color{black}
+	  	\item Poincare went for 3-body since it was the first unsolved... settled for CR3BP 
+	  	\item (description of CR3BP) (Figure \ref{fig:CR3BP_EarthMoon})
+			\begin{figure}
+			\centering
+			\includegraphics[scale=0.7]{CR3BP_EarthMoon.png}
+			\caption{CR3BP}
+			\label{fig:CR3BP_EarthMoon}
+			\end{figure}
+		\item
+	  	\item $\ddot{x} =  2\dot{y} + x - (1-\mu)\left(\dfrac{x+\mu}{R_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{R_2^3}\right)\\
+		\ddot{y} = - 2\dot{x} + y\left(-\dfrac{1-\mu}{R_1^3} - \dfrac{\mu}{R_2^3} + 1\right) \\
+		\ddot{z} = z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right)$
 	  	\item (a bit on the error ... discuss the math)
 	  	\item as a result, found homoclinic points/orbits
 
