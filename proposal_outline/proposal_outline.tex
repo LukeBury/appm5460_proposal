@@ -39,34 +39,34 @@
 	  \end{itemize}
 	\item History w/ Lit Review (luke)
 	  \begin{itemize}
-	  	\item Competition basics ... 4 problems
-	  	\item 1st problem was n-body problem
-	  	\item Poincare went for 3-body since it was the first unsolved... settled for CR3BP 
-	  	\item (description of CR3BP) (Figure \ref{fig:CR3BP_EarthMoon})
-			\begin{figure}
-			\centering
-			\includegraphics[scale=0.7]{CR3BP_EarthMoon.png}
-			\caption{CR3BP (from CU CR3BP handout)}
-			\label{fig:CR3BP_EarthMoon}
-			\end{figure}
-		\item
-	  	\item $\ddot{x} =  2\dot{y} + x - (1-\mu)\left(\dfrac{x+\mu}{R_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{R_2^3}\right)\\
-		\ddot{y} = - 2\dot{x} + y\left(-\dfrac{1-\mu}{R_1^3} - \dfrac{\mu}{R_2^3} + 1\right) \\
-		\ddot{z} = z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right)$
-	  	\item (a bit on the error ... discuss the math)
-	  	\item as a result, found homoclinic points/orbits
+	  	\item As documented by Andersson and Barrow-Green \cite{Andersson1994,BarrowGreen1994}, in 1885, Acta Mathematica announced a mathematics competition to the world. This competition, sponsored by King Oscar II of Sweden, encouraged interested parties to make an attempt at solving one of four selected problems.
+	  	\item Henri Poincaré, a prominant mathematician of the time (who was largely favored to win the competition) chose to attempt the first problem, which essentially asked for a solution to the n-body problem. However, instead of the n-body problem, Poincaré decided to first attempt the three-body problem, since it was the first order of the problem that remained unsolved. To further simplify his initial effort, he restricted the three-body system in a manner known today as the Circularly Restricted Three Body Problem (CR3BP). 
+	  	\item In the CR3BP, the origin is set at the barycenter of two bodies of interest (eg, Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits, and act as point masses from a gravitational perspective. The system is normalized so that the masses of the two bodies sum to 1 ($m_1 = \mu,\; m_2 = 1-\mu$), the distance between the bodies is 1, and the gravitational constant G is equal to 1. 
+	  	\begin{figure}
+	  	\centering
+	  	\includegraphics[scale=0.6]{CR3BP.png}\nonumber
+	  	\caption{Layout of Circular Restricted Three Body Problem \cite{KoonLoMarsdenRoss2011}}
+		\label{fig:CR3BP}
+	  	\end{figure}
+		\item Under these conditions, the equations of motion for the CR3BP are:
+	  	\begin{align}
+	  	\ddot{x} &=  2\dot{y} + x - (1-\mu)\left(\dfrac{x+\mu}{R_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{R_2^3}\right)\\
+		\ddot{y} &= - 2\dot{x} + y\left(-\dfrac{1-\mu}{R_1^3} - \dfrac{\mu}{R_2^3} + 1\right) \\
+		\ddot{z} &= z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right)
+		\end{align}
+	  	%\item (a bit on the error ... discuss the math) ... as a result, discovered homoclinic points/orbits
+	  	\item Poincaré submitted his work on the CR3BP, won the competition, and collected the prize. However, around the of some of the first printings of his work, a discussion with Lars Edvard Phragmén led to the discovery of an error within Poincaré's submissiion that held significant ramifications.
 
 	  \end{itemize}
 	\item Application w/ Lit Review
 	  \begin{itemize}
 	  	\item \color{red}Much research has been conducted in this field since (references, references, references)\color{black}
 	  	\item (pg 72+ of book)
-	  	\item we will look at / recreate Poincare's work
-	  	\item we will create homoclinic orbits in the CR3BP using intersections of stable and unstable orbits in Poincare plots
+	  	\item we will look at / recreate Poincaré's work
+	  	\item we will create homoclinic orbits in the CR3BP using intersections of stable and unstable orbits in Poincaré plots
 	  \end{itemize}
 \end{itemize}
 
-\cite{KoonLoMarsdenRoss2011}
 \bibliographystyle{plain}
 \bibliography{../bibliography/appm5460.bib}
 

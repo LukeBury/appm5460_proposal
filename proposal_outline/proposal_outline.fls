@@ -87,12 +87,12 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT ../figures/CR3BP_EarthMoon.png
-INPUT ../figures/CR3BP_EarthMoon.png
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ../figures/CR3BP.png
+INPUT ../figures/CR3BP.png
 OUTPUT proposal_outline.pdf
-INPUT ../figures/CR3BP_EarthMoon.png
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ../figures/CR3BP.png
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT proposal_outline.bbl
 INPUT proposal_outline.bbl

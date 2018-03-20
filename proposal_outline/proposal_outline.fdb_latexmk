@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proposal_outline"] 1521574499 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521574499
-  "../bibliography/appm5460.bib" 1521574497 745 0446cdcab01f2d9cbb2e8a4d84023497 ""
+["bibtex proposal_outline"] 1521582441 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521582819
+  "../bibliography/appm5460.bib" 1521574506 719 21dd4b47143f176b2afdf301ba0cc647 ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "proposal_outline.aux" 1521574499 423 47fcbff4e2855ea481f42f282831da87 ""
+  "proposal_outline.aux" 1521582819 571 ced7257e3bfd6d18865c39566765ebbe ""
   (generated)
   "proposal_outline.bbl"
   "proposal_outline.blg"
-["pdflatex"] 1521574499 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521574499
-  "../figures/CR3BP_EarthMoon.png" 1521566157 113866 2011ee438e7fd163071bba64472c7654 ""
+["pdflatex"] 1521582819 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521582819
+  "../figures/CR3BP.png" 1521580044 64324 c8ce63f9536f503f9b7f91fa47db7854 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -71,10 +71,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "proposal_outline.aux" 1521574499 423 47fcbff4e2855ea481f42f282831da87 ""
-  "proposal_outline.bbl" 1521574499 240 a31037225ea1f71531cd1888f96c666a "bibtex proposal_outline"
-  "proposal_outline.tex" 1521574453 2783 12b3a38430c4051e9326d37d78662815 ""
+  "proposal_outline.aux" 1521582819 571 ced7257e3bfd6d18865c39566765ebbe ""
+  "proposal_outline.bbl" 1521582441 638 4f339c900c690666ab3637fb658f96c1 "bibtex proposal_outline"
+  "proposal_outline.tex" 1521582819 4314 b322c041185d444d618854978a3178d0 ""
   (generated)
+  "proposal_outline.log"
   "proposal_outline.aux"
   "proposal_outline.pdf"
-  "proposal_outline.log"
