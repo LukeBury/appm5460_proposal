@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1521562495 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521562495
+["pdflatex"] 1521562580 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521562580
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -62,8 +62,8 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "proposal_outline.aux" 1521562495 154 fbf1b6b0a13cb4f3568786f9770bc9c7 ""
-  "proposal_outline.tex" 1521562494 2622 da68eb8c39b4d31f9c6ebe544f9d0a87 ""
+  "proposal_outline.aux" 1521562580 154 fbf1b6b0a13cb4f3568786f9770bc9c7 ""
+  "proposal_outline.tex" 1521562579 2621 8b56cd03f4545b3b82733a05f77a9d2e ""
   (generated)
   "proposal_outline.log"
   "proposal_outline.pdf"
