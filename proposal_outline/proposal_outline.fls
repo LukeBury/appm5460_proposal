@@ -104,11 +104,14 @@ INPUT ../figures/CR3BP.png
 OUTPUT proposal_outline.pdf
 INPUT ../figures/CR3BP.png
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ../figures/curveIntersection1.png
+INPUT ../figures/curveIntersection1.png
+INPUT ../figures/curveIntersection1.png
 INPUT proposal_outline.bbl
 INPUT proposal_outline.bbl
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT proposal_outline.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

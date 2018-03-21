@@ -46,7 +46,7 @@
 	  	\item In the CR3BP, the origin is set at the barycenter of two bodies of interest (eg, Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits, and act as point masses from a gravitational perspective. The system is normalized so that the masses of the two bodies sum to 1 ($m_1 = \mu,\; m_2 = 1-\mu$), the distance between the bodies is 1, and the gravitational constant G is equal to 1. 
 	  	\begin{figure}
 	  	\centering
-	  	\includegraphics[scale=0.5]{CR3BP.png}\nonumber
+	  	\includegraphics[scale=0.4]{CR3BP.png}\nonumber
 	  	\caption{Layout of Circular Restricted Three Body Problem \cite{KoonLoMarsdenRoss2011}}
 		\label{fig:CR3BP}
 	  	\end{figure}
@@ -57,8 +57,14 @@
 		\ddot{z} &= z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right)
 		\end{align}
 	  	%\item (a bit on the error ... discuss the math) ... as a result, discovered homoclinic points/orbits
-	  	\item Poincaré submitted his work on the CR3BP, won the competition, and collected the prize. However, around the of some of the first printings of his work, a discussion with Lars Edvard Phragmén led to the discovery of an error within Poincaré's submissiion that held significant ramifications.
-	  	\item \color{red} still need mathematic discussion of error \color{black}
+	  	\item Poincaré submitted his work on the CR3BP, won the competition, and collected the prize. However, around the time of some of the first printings of his work, a discussion with Lars Edvard Phragmén led to the discovery of an error within Poincaré's submissiion that held significant ramifications.
+	  	\item The error was rooted in Poincaré's failing "to take proper account of the exact geometric nature of a particular curve" \cite{BarrowGreen1997}. In Theorem III of the paper's first, and flawed, edition, Poincaré claimed that a particular invariant curve was closed (Figure \ref{fig:curveIntersection1}(a,b)). He failed to consider that the curve could be self-intersecting (Figure \ref{fig:curveIntersection1}(c)) - a mistake whose discovery cost him the fortune he had won, but also cemented his place among legendary mathematicians for his resulting discovery of \textit{doubly asymptotic}, or \textit{homoclinic}, trajectories.
+	  	\begin{figure}
+	  	\centering
+	  	\includegraphics[scale=0.4]{curveIntersection1.png}\nonumber
+	  	\caption{Invariant curve with self intersection from Poincaré's corrected work \cite{BarrowGreen1997}}
+		\label{fig:curveIntersection1}
+	  	\end{figure}
 
 	  \end{itemize}
 	\item Application w/ Modern Lit Review
