@@ -1,14 +1,15 @@
 # Fdb version 3
-["bibtex proposal_outline"] 1521660671 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521664206
-  "../bibliography/appm5460.bib" 1521659866 905 5794f9869362000c5b18c0503ebd9059 ""
+["bibtex proposal_outline"] 1521667974 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521667975
+  "../bibliography/appm5460.bib" 1521666592 905 5794f9869362000c5b18c0503ebd9059 ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "proposal_outline.aux" 1521664206 876 cb53da3ae30cf1dfe01b88d56bbf0b42 ""
+  "proposal_outline.aux" 1521667975 1376 ce5cd779c98f418fc7f51bdb4b5c3650 ""
   (generated)
-  "proposal_outline.bbl"
   "proposal_outline.blg"
-["pdflatex"] 1521664206 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521664206
+  "proposal_outline.bbl"
+["pdflatex"] 1521667974 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521667975
   "../figures/CR3BP.png" 1521580044 64324 c8ce63f9536f503f9b7f91fa47db7854 ""
   "../figures/curveIntersection1.png" 1521660960 46895 6ab2fe7ee89f2144c1155ace1cb3e186 ""
+  "../figures/homoclinicPoints.png" 1521665799 186497 d7de42d8fb2739a8b7a9e47c9d490639 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -77,10 +78,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "proposal_outline.aux" 1521664206 876 cb53da3ae30cf1dfe01b88d56bbf0b42 ""
-  "proposal_outline.bbl" 1521660671 783 e68867dbdc5225fd018f4e37ce7f8c0c "bibtex proposal_outline"
-  "proposal_outline.tex" 1521664205 5296 da58651a0f931d4181f105c37c7defc0 ""
+  "proposal_outline.aux" 1521667975 1376 ce5cd779c98f418fc7f51bdb4b5c3650 ""
+  "proposal_outline.bbl" 1521667974 783 e68867dbdc5225fd018f4e37ce7f8c0c "bibtex proposal_outline"
+  "proposal_outline.tex" 1521667966 5931 2db1b3c0769b3051333be6ca2db278f0 ""
   (generated)
+  "proposal_outline.aux"
   "proposal_outline.log"
   "proposal_outline.pdf"
-  "proposal_outline.aux"
