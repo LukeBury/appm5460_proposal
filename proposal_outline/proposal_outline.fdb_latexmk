@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex proposal_outline"] 1521583621 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521583724
-  "../bibliography/appm5460.bib" 1521574506 719 21dd4b47143f176b2afdf301ba0cc647 ""
+["bibtex proposal_outline"] 1521643727 "proposal_outline.aux" "proposal_outline.bbl" "proposal_outline" 1521643728
+  "../bibliography/appm5460.bib" 1521643606 907 acbb97179716ef8ae59f189c0b2d333a ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "proposal_outline.aux" 1521583723 571 792a37590e1f52c464d8854f446e22f6 ""
+  "proposal_outline.aux" 1521643728 571 792a37590e1f52c464d8854f446e22f6 ""
   (generated)
   "proposal_outline.blg"
   "proposal_outline.bbl"
-["pdflatex"] 1521583723 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521583724
+["pdflatex"] 1521643727 "proposal_outline.tex" "proposal_outline.pdf" "proposal_outline" 1521643728
   "../figures/CR3BP.png" 1521580044 64324 c8ce63f9536f503f9b7f91fa47db7854 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
@@ -76,10 +76,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "proposal_outline.aux" 1521583723 571 792a37590e1f52c464d8854f446e22f6 ""
-  "proposal_outline.bbl" 1521583621 638 4f339c900c690666ab3637fb658f96c1 "bibtex proposal_outline"
-  "proposal_outline.tex" 1521583723 4455 9bdee1abeb790ba8a4df0abda8eb30cf ""
+  "proposal_outline.aux" 1521643728 571 792a37590e1f52c464d8854f446e22f6 ""
+  "proposal_outline.bbl" 1521643727 638 4f339c900c690666ab3637fb658f96c1 "bibtex proposal_outline"
+  "proposal_outline.tex" 1521643727 4455 cd04d546a5608dd47680649e3d14cbe0 ""
   (generated)
-  "proposal_outline.pdf"
   "proposal_outline.aux"
   "proposal_outline.log"
+  "proposal_outline.pdf"
