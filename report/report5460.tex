@@ -22,7 +22,7 @@ In 1885, a competition was held by Acta Mathematica in which participants were c
 \section*{The Competition}
 As documented by Andersson and Barrow-Green \cite{Andersson1994,BarrowGreen1994}, in 1885, Acta Mathematica announced a mathematics competition to the world. This competition, sponsored by King Oscar II of Sweden, encouraged interested parties to make an attempt at solving one of four selected problems. Henri Poincaré, a prominant mathematician of the time (who was largely favored to win the competition) attempted the first problem, which essentially asked for a solution to the troubling $n$-body problem. However, Poincaré instead decided to attempt a subset of the $n$-body problem known as the three-body problem, since it was the first order of the problem remaining unsolved. To further simplify his initial effort, Poincaré restricted the three-body system in a manner known today as the Circular Restricted Three-Body Problem (CR3BP), which will be discussed further in the next section.
 
-Poincaré's submission to the competition consisted of the culmination of several strands of his work from the previous decade, which included geometrical and analytical theory, integral invariants, and periodic solutions to dynamical systems. Poincaré applied these theories in an attempt to rigorously prove stability and find periodic solutions for the CR3BP. The competition judges immediately recognized the importance of Poincaré's submission and unanimoulsy crowned him the victor. However, around the time that his work was first being printed, a discussion with Lars Edvard Phragmén led to the discovery of an error within Poincaré's submission that held significant ramifications. The error was rooted in Poincaré's failing ``to take proper account of the exact geometric nature of a particular curve'' \cite{BarrowGreen1997}. In Theorem III of the paper's first, and flawed, edition, Poincaré claimed that a particular invariant curve was closed (Figure \ref{fig:curveIntersection1}(a,b)). He failed to consider that the curve could be self-intersecting (Figure \ref{fig:curveIntersection1}(c)). After realizing his mistake, Poincaré reworked his derivations to discover that the asymptotic surfaces are not closed, but instead, they intersect along infinitely many asymptotic trajectories. Ironically, this mistake cemented Poincaré's place among legendary mathematicians for his resulting discovery of \textit{doubly asymptotic}, or \textit{homoclinic}, points/orbits in the CR3PB and dynamical systems in general.  
+Poincaré's submission to the competition consisted of the culmination of several strands of his work from the previous decade, which included geometrical and analytical theory, integral invariants, and periodic solutions to dynamical systems. Poincaré applied these theories in an attempt to rigorously prove stability and find periodic solutions for the CR3BP. The competition judges immediately recognized the importance of Poincaré's submission and unanimously crowned him the victor. However, around the time that his work was first being printed, a discussion with Lars Edvard Phragmén led to the discovery of an error within Poincaré's submission that held significant ramifications. The error was rooted in Poincaré's failing ``to take proper account of the exact geometric nature of a particular curve'' \cite{BarrowGreen1997}. In Theorem III of the paper's first, and flawed, edition, Poincaré claimed that a particular invariant curve was closed (Figure \ref{fig:curveIntersection1}(a,b)). He failed to consider that the curve could be self-intersecting (Figure \ref{fig:curveIntersection1}(c)). After realizing his mistake, Poincaré reworked his derivations to discover that the asymptotic surfaces are not closed, but instead, they intersect along infinitely many asymptotic trajectories. Ironically, this mistake cemented Poincaré's place among legendary mathematicians for his resulting discovery of \textit{doubly asymptotic}, or \textit{homoclinic}, points/orbits in the CR3PB and dynamical systems in general.  
 
 \begin{figure}[H]
 \centering
@@ -31,7 +31,12 @@ Poincaré's submission to the competition consisted of the culmination of severa
 \label{fig:curveIntersection1}
 \end{figure}
 
-\color{red}\textbf{MATH}\color{black}
+\color{red}\textbf{Need more math}\color{black}\\
+\color{red}\textbf{Need more math}\color{black}\\
+\color{red}\textbf{Need more math}\color{black}\\
+\color{red}\textbf{Need more math}\color{black}\\
+\color{red}\textbf{Need more math}\color{black}\\
+\color{red}\textbf{Need more math}\color{black}\\
 %-----------------------------------------------------------------------------------------
 %-----------------------------------------------------------------------------------------
 
@@ -41,6 +46,20 @@ Poincaré's submission to the competition consisted of the culmination of severa
 	\item Application to find POs... manifolds... homoclinic orbits
 	\item \color{black}
 \end{itemize}
+Before studying periodic orbits, their manifolds, and the process of locating homoclinic orbits, it is necessary to provide the reader a solid foundation of the Circular Restricted Three Body Problem (CR3BP) - the primary mathematical toolbox from which the aforementioned trajectories are created and analyzed. In the CR3BP (Fig. \ref{fig:CR3BP}), the origin of the system is set at the barycenter of the two main bodies in the system (e.g., the Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits and act as point masses from a gravitational perspective. The restricted problem is then to ascertain the motion of the third body whose mass is considered negligible. The system is typically normalized so that the masses of the two bodies sum to 1 ($m_1 = \mu,\; m_2 = 1-\mu$), the distance between the bodies is 1, and the gravitational constant G is equal to 1. Under these conditions, the equations of motion for the CR3BP are shown in Equations \ref{eomx}-\ref{eomz}:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=3.75in]{CR3BP.png}\nonumber
+\caption{Layout of Circular Restricted Three Body Problem \cite{KoonLoMarsdenRoss2011}}
+\label{fig:CR3BP}
+\end{figure}
+
+\begin{align}
+\ddot{x} &=  2\dot{y} + x - (1-\mu)\left(\dfrac{x+\mu}{R_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{R_2^3}\right) \label{eomx}\\
+\ddot{y} &= - 2\dot{x} + y\left(-\dfrac{1-\mu}{R_1^3} - \dfrac{\mu}{R_2^3} + 1\right) \label{eomy}\\
+\ddot{z} &= z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right). \label{eomz}
+\end{align} 
 
 %-----------------------------------------------------------------------------------------
 %-----------------------------------------------------------------------------------------
@@ -50,7 +69,7 @@ Poincaré's submission to the competition consisted of the culmination of severa
 	\item zero velocity curves
 	\item POs and algorithm to find them
 	\item manifolds and the algorithms
-	\item PO stability ... eigenvalues of monodromy matrix; Poincare sections and their intersections ... homoclinic orbits
+	\item PO stability ... eigenvalues of monodromy matrix; Poincaré sections and their intersections ... homoclinic orbits
 	\item Plotting and discussion of homoclinic orbits (piecewise)
 	\item \color{black}
 \end{itemize}
