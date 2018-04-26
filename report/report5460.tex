@@ -17,7 +17,17 @@
 \maketitle
 %=======================================================================================================
 \section*{Introduction}
-In 1885, a competition was held by Acta Mathematica in which participants were challenged to solve one of four outstanding math problems of time. Henri Poincaré, a prominent mathematician of the time, entered the contest and ultimately won. However, his submission contained a critical mistake that led to the discovery of homoclinic orbits and forever changed the future of dynamical mathematics. In the following report, this history and controversy of Poincaré's mistake are discussed, the mathematics that led to the discovery of homoclinic orbits are analyzed, and from this theory, real homoclinic orbits are found, simulated, and presented. 
+In 1885, a competition was held by Acta Mathematica in which participants were challenged to solve one of four outstanding math problems of time. Henri Poincaré, a prominent mathematician of the time, entered the contest and ultimately won. However, his submission contained a critical mistake that led to the discovery of homoclinic orbits. In mathematics, a homoclinic orbit is defined as a trajectory of a flow of a dynamical system which joins a saddle equilibrium point to itself. More precisely, a homoclinic orbit lies in the intersection of the stable manifold, $W^s(p)$, and the unstable manifold, $W^u(p)$, of an equilibrium. Figure \ref{f:homoclinic_example} shows an example of a simple, two-dimensional homoclinic orbit about the saddle equilibrium point $p$. As the figure shows, as time approaches either negative or positive infinity, the homoclinic orbit will approach $p$. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=4in]{homoclinic_orbit.png}
+    \caption{A 2-Dimensional homoclinic orbit.}
+    \label{f:homoclinic_example}
+\end{figure}
+
+Homoclinic orbits play an important role in the chaotic behavior of a dynamical system. Analysis of the intersection of manifolds of the same equilibrium point or orbit offers a way to extrapolate complete global behavior from simple, local information. In the following report, the history and controversy of Poincaré's mistake are discussed, the mathematics that led to the discovery of homoclinic orbits are analyzed, and from this theory, homoclinic orbits in the CR3BP are found and presented. 
+
 
 \section*{The Competition}
 As documented by Andersson and Barrow-Green \cite{Andersson1994,BarrowGreen1994}, in 1885, Acta Mathematica announced a mathematics competition to the world. This competition, sponsored by King Oscar II of Sweden, encouraged interested parties to make an attempt at solving one of four selected problems. Henri Poincaré, a prominant mathematician of the time (who was largely favored to win the competition) attempted the first problem, which essentially asked for a solution to the troubling $n$-body problem. However, Poincaré instead decided to attempt a subset of the $n$-body problem known as the three-body problem, since it was the first order of the problem remaining unsolved. To further simplify his initial effort, Poincaré restricted the three-body system in a manner known today as the Circular Restricted Three-Body Problem (CR3BP), which will be discussed further in the next section.
@@ -46,11 +56,11 @@ Poincaré's submission to the competition consisted of the culmination of severa
 	\item Application to find POs... manifolds... homoclinic orbits
 	\item \color{black}
 \end{itemize}
-Before studying periodic orbits, their manifolds, and the process of locating homoclinic orbits, it is necessary to provide the reader a solid foundation of the Circular Restricted Three Body Problem (CR3BP) - the primary mathematical toolbox from which the aforementioned trajectories are created and analyzed. In the CR3BP (Fig. \ref{fig:CR3BP}), the origin of the system is set at the barycenter of the two main bodies in the system (e.g., the Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits and act as point masses from a gravitational perspective. The restricted problem is then to ascertain the motion of the third body whose mass is considered negligible. The system is typically normalized so that the masses of the two bodies sum to 1 ($m_1 = \mu,\; m_2 = 1-\mu$), the distance between the bodies is 1, and the gravitational constant G is equal to 1. Under these conditions, the equations of motion for the CR3BP are shown in Equations \ref{eomx}-\ref{eomz}:
+Before studying periodic orbits, their manifolds, and the process of locating homoclinic orbits, it is necessary to provide the reader a solid foundation of the Circular Restricted Three Body Problem (CR3BP) - the primary mathematical toolbox from which the aforementioned trajectories are created and analyzed. In the CR3BP (Figure \ref{fig:CR3BP}), the origin of the system is set at the barycenter of the two main bodies in the system (e.g., the Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits and act as point masses from a gravitational perspective. The restricted problem is then to ascertain the motion of the third body whose mass is considered negligible. The system is typically normalized so that the masses of the two bodies sum to 1 ($m_1 = \mu,\; m_2 = 1-\mu$), the distance between the bodies is 1, and the gravitational constant G is equal to 1. Under these conditions, the equations of motion for the CR3BP are shown in Equations \ref{eomx}-\ref{eomz}. Figure \ref{fig:cr3bpEffectExample} demonstrates the difference between a trajectory about a single body with no external forces and a trajectory where a third body is included. Clearly, the addition of a third body has the capacity to significantly perturb an orbit. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=3.75in]{CR3BP.png}\nonumber
+\includegraphics[width=3.75in]{CR3BP.png}
 \caption{Layout of Circular Restricted Three Body Problem \cite{KoonLoMarsdenRoss2011}}
 \label{fig:CR3BP}
 \end{figure}
@@ -60,6 +70,14 @@ Before studying periodic orbits, their manifolds, and the process of locating ho
 \ddot{y} &= - 2\dot{x} + y\left(-\dfrac{1-\mu}{R_1^3} - \dfrac{\mu}{R_2^3} + 1\right) \label{eomy}\\
 \ddot{z} &= z\left(-\dfrac{1 - \mu}{R_1^3} - \dfrac{\mu}{R_2^3}\right). \label{eomz}
 \end{align} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=6in]{cr3bpEffectExample.png}
+\caption{Demonstration of third-body-effects in orbital dynamics. On the left, a particle is propagated in a circular orbit about a secondary body with basic, two-body dynamics. On the right, the particle is propagated from the same initial conditions, but the CR3BP equations of motion (Equations \ref{eomx}-\ref{eomz}) are implemented with a mass ratio, $\mu$, of $2.5\times10^{-4}$.}
+\label{fig:cr3bpEffectExample}
+\end{figure}
+
 
 %-----------------------------------------------------------------------------------------
 %-----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 APR 2018 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 APR 2018 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,58 +582,77 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<../figures/curveIntersection1.png, id=1, 772.8875pt x 268.00125pt>
+<../figures/homoclinic_orbit.png, id=1, 403.2666pt x 270.7716pt>
+File: ../figures/homoclinic_orbit.png Graphic file (type png)
+
+<use ../figures/homoclinic_orbit.png>
+Package pdftex.def Info: ../figures/homoclinic_orbit.png used on input line 24.
+
+(pdftex.def)             Requested size: 289.07999pt x 194.10841pt.
+ [1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figu
+res/homoclinic_orbit.png>]
+<../figures/curveIntersection1.png, id=15, 772.8875pt x 268.00125pt>
 File: ../figures/curveIntersection1.png Graphic file (type png)
 
 <use ../figures/curveIntersection1.png>
-Package pdftex.def Info: ../figures/curveIntersection1.png used on input line 2
+Package pdftex.def Info: ../figures/curveIntersection1.png used on input line 3
 9.
 (pdftex.def)             Requested size: 361.34999pt x 125.29811pt.
- [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 34--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--52
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
-
-<../figures/CR3BP.png, id=14, 567.11874pt x 371.3875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+ [2 <../figures/curveIntersection1.png>] <../figures/CR3BP.png, id=22, 567.1187
+4pt x 371.3875pt>
 File: ../figures/CR3BP.png Graphic file (type png)
 
 <use ../figures/CR3BP.png>
-Package pdftex.def Info: ../figures/CR3BP.png used on input line 53.
+Package pdftex.def Info: ../figures/CR3BP.png used on input line 63.
 (pdftex.def)             Requested size: 271.0125pt x 177.48193pt.
- [2 <../figures/curveIntersection1.png>] [3 <../figures/CR3BP.png>] (./report54
-60.bbl) [4] (./report5460.aux) ) 
+
+<../figures/cr3bpEffectExample.png, id=23, 1405.25pt x 702.625pt>
+File: ../figures/cr3bpEffectExample.png Graphic file (type png)
+
+<use ../figures/cr3bpEffectExample.png>
+Package pdftex.def Info: ../figures/cr3bpEffectExample.png used on input line 7
+6.
+(pdftex.def)             Requested size: 433.62pt x 216.8037pt.
+ [3 <../figures/CR3BP.png>] [4 <../figures/cr3bpEffectExample.png (PNG copy)>] 
+(./report5460.bbl) [5] (./report5460.aux) ) 
 Here is how much of TeX's memory you used:
- 3034 strings out of 492995
- 40450 string characters out of 6132704
- 113473 words of memory out of 5000000
- 6533 multiletter control sequences out of 15000+600000
+ 3046 strings out of 492995
+ 40832 string characters out of 6132704
+ 114489 words of memory out of 5000000
+ 6543 multiletter control sequences out of 15000+600000
  9748 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,32p,1577b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb>
-Output written on report5460.pdf (4 pages, 194340 bytes).
+</usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on report5460.pdf (5 pages, 312829 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
