@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report5460"] 1524775635 "report5460.aux" "report5460.bbl" "report5460" 1524775636
+["bibtex report5460"] 1524775635 "report5460.aux" "report5460.bbl" "report5460" 1524781861
   "../bibliography/appm5460.bib" 1521666592 905 5794f9869362000c5b18c0503ebd9059 ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "report5460.aux" 1524775636 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
+  "report5460.aux" 1524781861 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
   (generated)
   "report5460.bbl"
   "report5460.blg"
-["pdflatex"] 1524775635 "report5460.tex" "report5460.pdf" "report5460" 1524775636
+["pdflatex"] 1524781861 "report5460.tex" "report5460.pdf" "report5460" 1524781861
   "../figures/CR3BP.png" 1521580044 64324 c8ce63f9536f503f9b7f91fa47db7854 ""
   "../figures/cr3bpEffectExample.png" 1524774063 59975 35417d8b40c861face1dd4617c7662e1 ""
   "../figures/curveIntersection1.png" 1521660960 46895 6ab2fe7ee89f2144c1155ace1cb3e186 ""
@@ -84,10 +84,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "report5460.aux" 1524775636 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
+  "report5460.aux" 1524781861 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
   "report5460.bbl" 1524775635 783 e68867dbdc5225fd018f4e37ce7f8c0c "bibtex report5460"
-  "report5460.tex" 1524775635 9582 a55b12830d212ad420da29a7d0c8526d ""
+  "report5460.tex" 1524781860 9563 dae0fe5fa87c203f4db476e56de4c481 ""
   (generated)
-  "report5460.log"
   "report5460.aux"
+  "report5460.log"
   "report5460.pdf"
