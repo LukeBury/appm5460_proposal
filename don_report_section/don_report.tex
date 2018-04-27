@@ -1,0 +1,151 @@
+\documentclass[11pt]{article} % article, report, or book
+
+\usepackage[margin=1.0in]{geometry}
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\graphicspath{{../figures/}}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage[utf8]{inputenc} % allows for é
+\usepackage{float} % allows for [H]
+\usepackage{booktabs, caption, makecell}
+\renewcommand\theadfont{\bfseries}
+
+%===================================================================
+\title{A Discussion of Homoclinic Orbits in the Circular Restricted Three-Body Problem}
+\author{Luke Bury \& Don Kuettel}
+%===================================================================
+\begin{document}
+\maketitle
+%===================================================================
+\section{Introduction}
+\color{red}\textbf{LUKE SECTION}\color{black}\\
+
+\section{The Competition}
+\color{red}\textbf{LUKE SECTION}\color{black}\\
+%-------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------
+\section{Circular Restricted Three Body Problem}
+Before studying periodic orbits, their manifolds, and the process of locating homoclinic orbits, it is necessary to provide the reader a solid foundation of the Circular Restricted Three Body Problem (CR3BP) - the dynamical system in which the aforementioned trajectories are created and analyzed. In the CR3BP (Fig. \ref{f:CR3BP}), the origin of the system is set at the barycenter of the two main bodies in the system (e.g., the Earth \& Moon), and the frame rotates so these bodies remain stationary on the x-axis. The bodies are assumed to move in perfectly circular orbits and act as point masses from a gravitational perspective. The restricted problem is then to ascertain the motion of the third body whose mass is considered negligible. The system is typically normalized so that the masses of the two primary bodies sum to 1 (i.e., $m_1 = \mu$ and $m_2 = 1-\mu$, where $\mu = m_2/(m_1+m_2)$ is known as the three-body parameter), the distance between the primaries is 1, the orbital period period of the primaries is $2\pi$, and the gravitational constant G is equal to 1. Under these conditions, the equations of motion for the CR3BP are shown in Equations \ref{e:eomx}-\ref{e:eomz}:
+
+\begin{align}
+	\ddot{x} &= 2\dot{y} + x - (1-\mu)\left(\dfrac{x+\mu}{r_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{r_2^3}\right) \label{e:eomx}\\
+	\ddot{y} &= -2\dot{x} + y\left(-\dfrac{1-\mu}{r_1^3} - \dfrac{\mu}{r_2^3} + 1\right) \label{e:eomy}\\
+	\ddot{z} &= z\left(-\dfrac{1 - \mu}{r_1^3} - \dfrac{\mu}{r_2^3}\right), \label{e:eomz}
+\end{align} 
+
+\noindent
+where
+
+\begin{align}
+	r_1 & = \sqrt{\left(x + \mu\right)^2 + y^2 + z^2} \\
+	r_2 & = \sqrt{\left(x + -1 + \mu\right)^2 + y^2 + z^2}.
+\end{align}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=4in]{CR3BP.png}\nonumber
+	\caption{This figure shows the layout of the Circular Restricted Three-Body Problem \cite{KoonLoMarsdenRoss2011}}
+	\label{f:CR3BP}
+\end{figure}
+
+%-------------------------------------------------------------------
+\subsection{Equilibrium Point Locations}
+Complex dynamical system such as the CR3PB often times have equilibrium points that result in a constant solution to the system's differential equations. In the CR3BP, these points, known as Lagrange points, mark positions where the combined gravitational pull of the two large masses provides precisely the centripetal force required to orbit with them (i.e., the Lagrange points are stationary within the rotating system of the CR3BP). There are five such points labeled L$_1$ - L$_5$ located in the plane of the two primary masses. The first three Lagrange points lie on the line connecting the two primary bodies, and the last two points, L$_4$ and L$_5$, are located at the vertex of an equilateral triangle formed with the two primary bodies \cite{KoonLoMarsdenRoss2011}.
+
+In order to find the location of the five equilibrium points in the CR3BP, the velocity and acceleration must be set to zero in the system's equations of motion. This results in the following equations:
+
+\begin{align}
+	0 & = x - (1-\mu)\left(\dfrac{x+\mu}{r_1^3}\right) - \mu\left(\dfrac{x-1+\mu}{r_2^3}\right) \label{e:eomx_zero}\\
+	0 & = y\left(-\dfrac{1-\mu}{r_1^3} - \dfrac{\mu}{r_2^3} + 1\right) \label{e:eomy_zero}\\
+	0 & = z. \label{e:eomz_zero}
+\end{align}
+
+\noindent
+If $y$ is set to zero, a quintic equation in $x$ emerges. Solving this equation to first order results in the following location for the first three Lagrange points:
+
+\begin{align}
+	L_1 &= \left(1-\left(\frac{\mu}{3}\right)^{1/3},0\right)\label{e:L1_loc}\\
+	L_2 &= \left(1+\left(\frac{\mu}{3}\right)^{1/3},0\right)\label{e:L2_loc}\\
+	L_3 &= -\left(1+\left(\frac{5\mu}{12}\right),0\right). \label{e:L3_loc}
+\end{align}
+
+\noindent
+Using Equations \ref{e:L1_loc}-\ref{e:L3_loc} as initial conditions, a Newton-Raphson iteration can then be used to numerically find the exact location of the first three Lagrange points to machine precision. Equations \ref{e:eomx_zero}-\ref{e:eomz_zero} can also be used to find the two triangular equilibrium points, L$_4$ and L$_5$. Since the equilibrium points form an equilateral triangle with the primary bodies, $r_1 = r_2 = 1$ is substituted into Equation \ref{e:eomx_zero} and Equation \ref{e:eomy_zero}. These equations are subsequently solved to provide the exact locations for the remaining equilibrium points:
+
+\begin{align}
+	L_4 &= \left(\frac{1}{2}-\mu, \frac{\sqrt{3}}{2}\right)\\
+	L_5 &= \left(\frac{1}{2}-\mu, -\frac{\sqrt{3}}{2}\right).
+\end{align}
+
+\noindent
+Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.01214$), Table \ref{t:lagrange_points} shows the non-dimensional locations of the 5 Lagrange points to six significant figures. Additionally, Figure \ref{f:lagrange_points} shows 
+
+\begin{table}[! htbp]
+	\centering 
+	\caption{Summary of the Dimensionless Earth-Moon CR3BP Equilibrium Points}
+	\begin{tabular}{cccc}
+		\toprule\midrule
+		\thead{Lagrange Point} & \thead{x} & \thead{y} & \thead{z} \\ 
+	\midrule
+		L$_1$ & 0.836880 & 0 & 0 \\
+		L$_2$ & 1.15571 & 0 & 0 \\
+		L$_3$ & -1.00507 & 0 & 0 \\
+		L$_4$ & 0.487842 & 0.866025 & 0 \\
+		L$_5$ & 0.487842 & -0.866025 & 0 \\
+		\bottomrule
+	\end{tabular}
+	\label{t:lagrange_points}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6in]{zerovelocity_earthmoon.png}
+    \caption{This figure depicts the the 5 equilibrium points and the zero-velocity curves in the non-dimensional Earth-Moon CR3BP system.}
+    \label{f:lagrange_points}
+\end{figure}
+
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\subsection{Equilibrium Point Stability}
+
+\subsubsection{L$_1$ and L$_2$ Stability}
+
+\subsubsection{L$_3$ Stability}
+
+\subsubsection{L$_4$ and L$_5$ Stability}
+
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\subsection{Periodic Orbits}
+
+\subsubsection{Predictor-Corrector Method}
+
+\subsubsection{Orbit Families}
+
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\subsection{Periodic Orbit Manifolds}
+
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\subsection{Poincar\'{e} Sections and Homoclinic Orbits}
+
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\section{Conclusion}
+\color{red}\textbf{LUKE SECTION}\color{black}\\
+
+%===================================================================
+\newpage
+\bibliographystyle{plain}
+\bibliography{../bibliography/appm5460.bib}
+
+\end{document}  
