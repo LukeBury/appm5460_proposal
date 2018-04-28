@@ -1,20 +1,19 @@
 # Fdb version 3
-["bibtex report5460"] 1524775635 "report5460.aux" "report5460.bbl" "report5460" 1524781861
+["bibtex report5460"] 1524849579 "report5460.aux" "report5460.bbl" "report5460" 1524850985
   "../bibliography/appm5460.bib" 1521666592 905 5794f9869362000c5b18c0503ebd9059 ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "report5460.aux" 1524781861 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
+  "report5460.aux" 1524850985 1583 5644caf1b2365d0afc4bfeade8e7b2ae ""
   (generated)
   "report5460.bbl"
   "report5460.blg"
-["pdflatex"] 1524781861 "report5460.tex" "report5460.pdf" "report5460" 1524781861
-  "../figures/CR3BP.png" 1521580044 64324 c8ce63f9536f503f9b7f91fa47db7854 ""
+["pdflatex"] 1524850985 "report5460.tex" "report5460.pdf" "report5460" 1524850985
+  "../figures/CR3BP.png" 1524845991 72497 acb147934a64c93ca01ae6167c179fc0 ""
   "../figures/cr3bpEffectExample.png" 1524774063 59975 35417d8b40c861face1dd4617c7662e1 ""
   "../figures/curveIntersection1.png" 1521660960 46895 6ab2fe7ee89f2144c1155ace1cb3e186 ""
   "../figures/homoclinic_orbit.png" 1521670078 53096 76b1566429c402f2abef29db880334c5 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
-  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1480098701 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1480098701 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -30,7 +29,6 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1480098701 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1480098701 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1480098701 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
-  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1480098733 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1480098733 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1480098733 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -84,10 +82,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "report5460.aux" 1524781861 1583 8cac607e49d127e1e0588e4ec3a3e49b ""
-  "report5460.bbl" 1524775635 783 e68867dbdc5225fd018f4e37ce7f8c0c "bibtex report5460"
-  "report5460.tex" 1524781860 9563 dae0fe5fa87c203f4db476e56de4c481 ""
+  "report5460.aux" 1524850985 1583 5644caf1b2365d0afc4bfeade8e7b2ae ""
+  "report5460.bbl" 1524849579 783 e68867dbdc5225fd018f4e37ce7f8c0c "bibtex report5460"
+  "report5460.tex" 1524850985 9828 f87fb4287989acb2aaa568df1a96968e ""
   (generated)
-  "report5460.aux"
   "report5460.log"
   "report5460.pdf"
+  "report5460.aux"
