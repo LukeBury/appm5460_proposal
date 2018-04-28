@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 APR 2018 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 APR 2018 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,7 +660,7 @@ ne 50.
 
 
 LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 2 undefined on input li
-ne 56.
+ne 66.
 
 [2 <../figures/CR3BP.png>]
 <../figures/zerovelocity_earthmoon.png, id=21, 458.6736pt x 398.4486pt>
@@ -668,14 +668,14 @@ File: ../figures/zerovelocity_earthmoon.png Graphic file (type png)
 
 <use ../figures/zerovelocity_earthmoon.png>
 Package pdftex.def Info: ../figures/zerovelocity_earthmoon.png used on input li
-ne 105.
+ne 115.
 (pdftex.def)             Requested size: 433.62pt x 376.69398pt.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+ [3] [4 <../figures/zerovelocity_earthmoon.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[4 <../figures/zerovelocity_earthmoon.png>] [5]
+[5]
 No file don_report.bbl.
 (./don_report.aux)
 
@@ -683,10 +683,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4309 strings out of 493014
- 62067 string characters out of 6133351
- 138897 words of memory out of 5000000
- 7787 multiletter control sequences out of 15000+600000
+ 4310 strings out of 493014
+ 62086 string characters out of 6133351
+ 140906 words of memory out of 5000000
+ 7788 multiletter control sequences out of 15000+600000
  9709 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,39p,1230b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -700,7 +700,7 @@ local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on don_report.pdf (5 pages, 823956 bytes).
+Output written on don_report.pdf (5 pages, 826687 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream

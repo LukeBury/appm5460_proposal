@@ -51,6 +51,16 @@ where
 	\label{f:CR3BP}
 \end{figure}
 
+In most simplified astrodynamic systems (e.g., Keplerian motion, CR3BP, $n$-body porblem, etc...), there are important parameters, known as integrals of motion, that are constant throughout the motion of a system that can be used to define the system. For example, the orbital elements of a trajectory in a Keplerian system are the system's integrals of motion. The integral of motion for the CR3PB is called the Jacobi constant and is given by 
+
+\begin{equation}
+	J = -\dot{x}^2-\dot{y}^2-\dot{z}^2+x^2+y^2 + \frac{2\left(1-\mu\right)}{r_1} + \frac{2\mu}{r_2}.
+	\label{e:jacobi_constant}
+\end{equation}
+
+\noindent
+For a given Jacobi constant, the motion of a particle is limited to certain regions of space due to the constraint that the velocity cannot have imaginary components. These restrictive regions, known as zero-velocity curves, are computed by setting the velocity in Equation \ref{e:jacobi_constant} to zero and mapping the resultant surfaces in the CR3PB. The motion of an object with a specific Jacobi constant in bound within its respective zero-velocity curve and can only cross the boundaries under some non-conservative force.
+
 %-------------------------------------------------------------------
 \subsection{Equilibrium Point Locations}
 Complex dynamical system such as the CR3PB often times have equilibrium points that result in a constant solution to the system's differential equations. In the CR3BP, these points, known as Lagrange points, mark positions where the combined gravitational pull of the two large masses provides precisely the centripetal force required to orbit with them (i.e., the Lagrange points are stationary within the rotating system of the CR3BP). There are five such points labeled L$_1$ - L$_5$ located in the plane of the two primary masses. The first three Lagrange points lie on the line connecting the two primary bodies, and the last two points, L$_4$ and L$_5$, are located at the vertex of an equilateral triangle formed with the two primary bodies \cite{KoonLoMarsdenRoss2011}.
@@ -67,21 +77,21 @@ In order to find the location of the five equilibrium points in the CR3BP, the v
 If $y$ is set to zero, a quintic equation in $x$ emerges. Solving this equation to first order results in the following location for the first three Lagrange points:
 
 \begin{align}
-	L_1 &= \left(1-\left(\frac{\mu}{3}\right)^{1/3},0\right)\label{e:L1_loc}\\
-	L_2 &= \left(1+\left(\frac{\mu}{3}\right)^{1/3},0\right)\label{e:L2_loc}\\
-	L_3 &= -\left(1+\left(\frac{5\mu}{12}\right),0\right). \label{e:L3_loc}
+	L_1 &= \left(1-\left(\frac{\mu}{3}\right)^{1/3},0,0\right)\label{e:L1_loc}\\
+	L_2 &= \left(1+\left(\frac{\mu}{3}\right)^{1/3},0,0\right)\label{e:L2_loc}\\
+	L_3 &= -\left(1+\left(\frac{5\mu}{12}\right),0,0\right). \label{e:L3_loc}
 \end{align}
 
 \noindent
 Using Equations \ref{e:L1_loc}-\ref{e:L3_loc} as initial conditions, a Newton-Raphson iteration can then be used to numerically find the exact location of the first three Lagrange points to machine precision. Equations \ref{e:eomx_zero}-\ref{e:eomz_zero} can also be used to find the two triangular equilibrium points, L$_4$ and L$_5$. Since the equilibrium points form an equilateral triangle with the primary bodies, $r_1 = r_2 = 1$ is substituted into Equation \ref{e:eomx_zero} and Equation \ref{e:eomy_zero}. These equations are subsequently solved to provide the exact locations for the remaining equilibrium points:
 
 \begin{align}
-	L_4 &= \left(\frac{1}{2}-\mu, \frac{\sqrt{3}}{2}\right)\\
-	L_5 &= \left(\frac{1}{2}-\mu, -\frac{\sqrt{3}}{2}\right).
+	L_4 &= \left(\frac{1}{2}-\mu, \frac{\sqrt{3}}{2},0\right)\\
+	L_5 &= \left(\frac{1}{2}-\mu, -\frac{\sqrt{3}}{2},0\right).
 \end{align}
 
 \noindent
-Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.01214$), Table \ref{t:lagrange_points} shows the non-dimensional locations of the 5 Lagrange points to six significant figures. Additionally, Figure \ref{f:lagrange_points} shows 
+Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.012155$), Table \ref{t:lagrange_points} shows the non-dimensional locations of the five Lagrange points to six significant figures. Additionally, Figure \ref{f:lagrange_points} graphically shows these locations along with a contour plot of the CR3BP's zero-velocity curves for varying Jacobi constants. As Figure \ref{f:lagrange_points} shows, L$_1$, L$_2$, and L$_3$ lie at saddle points, while L$_4$ and L$_5$ lie at extrema values.
 
 \begin{table}[! htbp]
 	\centering 
@@ -90,11 +100,11 @@ Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.01214$), Table \ref{t:
 		\toprule\midrule
 		\thead{Lagrange Point} & \thead{x} & \thead{y} & \thead{z} \\ 
 	\midrule
-		L$_1$ & 0.836880 & 0 & 0 \\
-		L$_2$ & 1.15571 & 0 & 0 \\
-		L$_3$ & -1.00507 & 0 & 0 \\
-		L$_4$ & 0.487842 & 0.866025 & 0 \\
-		L$_5$ & 0.487842 & -0.866025 & 0 \\
+		L$_1$ & 0.836893 & 0 & 0 \\
+		L$_2$ & 1.15570 & 0 & 0 \\
+		L$_3$ & -1.00506 & 0 & 0 \\
+		L$_4$ & 0.487845 & 0.866025 & 0 \\
+		L$_5$ & 0.487845 & -0.866025 & 0 \\
 		\bottomrule
 	\end{tabular}
 	\label{t:lagrange_points}
@@ -111,6 +121,7 @@ Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.01214$), Table \ref{t:
 
 %-------------------------------------------------------------------
 \subsection{Equilibrium Point Stability}
+In this section a planar stability analysis is performed about each Lagrange point in the Earth-Moon CR3BP. This entails linearizing the rotational equations of motion about each equilibrium solution and solving for small departures from the equilibrium. 
 
 \subsubsection{L$_1$ and L$_2$ Stability}
 
