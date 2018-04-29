@@ -4,12 +4,13 @@
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 \graphicspath{{../figures/}}
-\usepackage{amsmath}
+\usepackage{amsmath, bm}
 \usepackage{color}
 \usepackage[utf8]{inputenc} % allows for é
 \usepackage{float} % allows for [H]
 \usepackage{booktabs, caption, makecell}
 \renewcommand\theadfont{\bfseries}
+\usepackage{setspace}
 
 %===================================================================
 \title{A Discussion of Homoclinic Orbits in the Circular Restricted Three-Body Problem}
@@ -41,7 +42,7 @@ where
 
 \begin{align}
 	r_1 & = \sqrt{\left(x + \mu\right)^2 + y^2 + z^2} \\
-	r_2 & = \sqrt{\left(x + -1 + \mu\right)^2 + y^2 + z^2}.
+	r_2 & = \sqrt{\left(x - 1 + \mu\right)^2 + y^2 + z^2}.
 \end{align}
 
 \begin{figure}[H]
@@ -91,7 +92,7 @@ Using Equations \ref{e:L1_loc}-\ref{e:L3_loc} as initial conditions, a Newton-Ra
 \end{align}
 
 \noindent
-Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.012155$), Table \ref{t:lagrange_points} shows the non-dimensional locations of the five Lagrange points to six significant figures. Additionally, Figure \ref{f:lagrange_points} graphically shows these locations along with a contour plot of the CR3BP's zero-velocity curves for varying Jacobi constants. As Figure \ref{f:lagrange_points} shows, L$_1$, L$_2$, and L$_3$ lie at saddle points, while L$_4$ and L$_5$ lie at extrema values.
+Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.012155$), Table \ref{t:lagrange_points} shows the non-dimensional locations of the five Lagrange points to six significant digits. Additionally, Figure \ref{f:lagrange_points} graphically shows these locations along with a contour plot of the Earth-Moon CR3BP's zero-velocity curves for varying Jacobi constants. As Figure \ref{f:lagrange_points} shows, L$_1$, L$_2$, and L$_3$ lie at saddle points, while L$_4$ and L$_5$ lie at extrema values.
 
 \begin{table}[! htbp]
 	\centering 
@@ -121,13 +122,174 @@ Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.012155$), Table \ref{t
 
 %-------------------------------------------------------------------
 \subsection{Equilibrium Point Stability}
-In this section a planar stability analysis is performed about each Lagrange point in the Earth-Moon CR3BP. This entails linearizing the rotational equations of motion about each equilibrium solution and solving for small departures from the equilibrium. 
+In this section a planar stability analysis is performed about each Lagrange point in the Earth-Moon CR3BP. This study entails linearizing the CR3BP equations of motion about each equilibrium solution and solving for the eigenvalues at the equilibrium point. The CR3BP equations of motion can be linearized by taking a Taylor series expansion of the ODE about each equilibrium point in the system. Neglecting higher order terms, the linearized equations of motion are give by
 
-\subsubsection{L$_1$ and L$_2$ Stability}
+\begin{equation}
+	\label{e:lin_eom}
+	\delta\begin{bmatrix}\dot{x}\\\dot{y}\\\ddot{x}\\\ddot{y}\end{bmatrix} = Df\left(x^*,y^*,\dot{x}^*,\dot{y}^*\right)\begin{bmatrix}x\\y\\\dot{x}\\\dot{y}\end{bmatrix}
+\end{equation}
 
-\subsubsection{L$_3$ Stability}
+\noindent
+where,
+
+\doublespacing
+\begin{equation}
+	\label{e:df_raw}
+	Df\left(x,y,\dot{x},\dot{y}\right) = 
+	\begin{bmatrix} 
+		\frac{\partial \dot{x}}{\partial x} & \frac{\partial \dot{x}}{\partial y} & \frac{\partial \dot{x}}{\partial \dot{x}}  & \frac{\partial \dot{x}}{\partial \dot{y}} \\ 
+		\frac{\partial \dot{y}}{\partial x} & \frac{\partial \dot{y}}{\partial y} & \frac{\partial \dot{y}}{\partial \dot{x}} & \frac{\partial \dot{y}}{\partial \dot{y}} \\
+		\frac{\partial \ddot{x}}{\partial x} & \frac{\partial \ddot{x}}{\partial y} & \frac{\partial \ddot{x}}{\partial \dot{x}} & \frac{\partial \ddot{x}}{\partial \dot{y}} \\
+		\frac{\partial \ddot{y}}{\partial x} & \frac{\partial \ddot{y}}{\partial y} & \frac{\partial \ddot{y}}{\partial \dot{x}} & \frac{\partial \ddot{y}}{\partial \dot{y}}
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent 
+For the CR3BP, Equation \ref{e:df_raw} evaluates to 
+
+\doublespacing
+\begin{equation}
+	\label{e:df_eval}
+	Df\left(x,y,\dot{x},\dot{y}\right) = 
+	\begin{bmatrix} 
+		0 & 0 & 1  & 0 \\ 
+		0 & 0 & 0 & 1 \\
+		XX & XY & 0 & 2 \\
+		YX & YY & -2 & 0
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent
+where,
+
+\begin{align}
+	XX &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu\left(\mu+x-1\right)\left(\mu+x-1\right)}{r_2^5} - \frac{3\left(\mu+x\right)\left(\mu+x\right)\left(\mu-1\right)}{r_1^5} + 1 \\
+	XY &= YX = \frac{3\mu y\left(\mu+x-1\right)}{r_2^5} - \frac{3y\left(\mu+x\right)\left(\mu-1\right)}{r_1^5} \\
+	YY &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu y^2}{r_2^5} - \frac{3y^2\left(\mu-1\right)}{r_1^5} + 1
+\end{align}
+
+\noindent
+By evaluating the matrix given in Equation \ref{e:df_eval} at the equilibrium points and finding the resulting eigenvalues of the matrix, the stability of that point can be studied.
+
+\subsubsection{L$_1$, L$_2$, and L$_3$ Stability}
+It was visually shown in Figure \ref{f:lagrange_points} that L$_1$, L$_2$, and L$_3$ were saddle points. By plugging in the locations of the equilibrium points given in Table \ref{t:lagrange_points} along with the Earth-Moon three-body parameter ($\mu = 0.012155$), this claim can be mathematically validated. 
+
+\subsubsection*{L$_1$}
+The evaluated $Df$ matrix for the L$_1$ Lagrange point is given by
+
+\doublespacing
+\begin{equation}
+	\label{e:df_eval_L1}
+	Df|_{L_1} = 
+	\begin{bmatrix} 
+		0 & 0 & 1  & 0 \\ 
+		0 & 0 & 0 & 1 \\
+		11.2955 & 0 & 0 & 2 \\
+		0 & -4.1478 & -2 & 0
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent
+where,
+
+\begin{equation}
+	\label{e:evals_L1}
+	\lambda_{1,2} = \pm 2.9321 \text{ and } \lambda_{3,4} = \pm i2.3344.
+\end{equation}
+
+\noindent
+As Equation \ref{e:evals_L1} shows, the L$_1$ equilibrium point has a positive, real eigenvalue that results in a dynamically unstable saddle point. Small departures from the equilibrium will grow exponentially with a time constant of $\tau = 1/real(\lambda_{3,4}) = 0.4284$. Re-dimensionalizing this value by the rotation rate of the Earth-Moon system ($\omega=2.665\times10^{-6}$ rad/sec) results in a time constant of $\tau\approx1.86$ days. In other words, a satellite parked at L$_1$ will wander off after a few days unless course corrections are made.
+
+\subsubsection*{L$_2$}
+The evaluated $Df$ matrix for the L$_2$ Lagrange point is given by
+
+\doublespacing
+\begin{equation}
+	\label{e:df_eval_L2}
+	Df|_{L_2} = 
+	\begin{bmatrix} 
+		0 & 0 & 1  & 0 \\ 
+		0 & 0 & 0 & 1 \\
+		7.3807 & 0 & 0 & 2 \\
+		0 & -2.1903 & -2 & 0
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent
+where,
+
+\begin{equation}
+	\label{e:evals_L2}
+	\lambda_{1,2} = \pm 2.1586 \text{ and } \lambda_{3,4} = \pm i1.8626.
+\end{equation}
+
+\noindent
+Similarly to the L$_1$ point, the L$_2$ Lagrange point has a positive, real eigenvalue that results in a dynamically unstable saddle point. The re-dimensionalized L$_2$ time constant is $\tau\approx2.33$ days. 
+
+\subsubsection*{L$_3$}
+The evaluated $Df$ matrix for the L$_3$ Lagrange point is given by
+
+\doublespacing
+\begin{equation}
+	\label{e:df_eval_L3}
+	Df|_{L_3} = 
+	\begin{bmatrix} 
+		0 & 0 & 1  & 0 \\ 
+		0 & 0 & 0 & 1 \\
+		3.0214 & 0 & 0 & 2 \\
+		0 & -0.0107 & -2 & 0
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent
+where,
+
+\begin{equation}
+	\label{e:evals_L3}
+	\lambda_{1,2} = \pm 0.1779 \text{ and } \lambda_{3,4} = \pm i1.0104.
+\end{equation}
+
+\noindent
+Once again, the evaluated $Df$ matrix has a positive, real eigenvalue resulting in the L$_3$ Lagrange point being unstable.The re-dimensionalized L$_3$ time constant is $\tau\approx4.30$ days.
 
 \subsubsection{L$_4$ and L$_5$ Stability}
+The stability analysis of the L$_4$ and L$_5$ Lagrange points yields a surprise. While these points correspond to local maxima of the total potential, they are stable due to a ``Coriolis'' force. Initially, a mass situated near L$_4$ or L$_5$ will tend to slide down the potential, but as it does, it picks up speed sending it into an orbit around the equilibrium point. To prove this, the evaluated $Df$ matrix for the L$_4$ and L$_5$ Lagrange points is given by
+
+\doublespacing
+\begin{equation}
+	\label{e:df_eval_L45}
+	Df|_{L_4,5} = 
+	\begin{bmatrix} 
+		0 & 0 & 1  & 0 \\ 
+		0 & 0 & 0 & 1 \\
+		0.7500 & \pm1.2675 & 0 & 2 \\
+		\pm1.2675 & 2.2500 & -2 & 0
+	\end{bmatrix}.
+\end{equation}
+\singlespacing
+
+\noindent
+where,
+
+\begin{equation}
+	\label{e:evals_L45}
+	\lambda_{1,2} = \pm i0.9545 \text{ and } \lambda_{3,4} = \pm i0.2983.
+\end{equation}
+
+\noindent
+As Equation \ref{e:evals_L45} shows, the L$_4$ and L$_5$ equilibrium points have purely imaginary eigenvalues in the Earth-Moon system resulting in Lyapunov stability. However, this is not always the case for a three body system. In order for the L$_4$ and L$_5$ Lagrange points to be stable, the primary masses of the system have to satisfy the follow inequality \cite{ScheersBook}
+
+\begin{equation}
+	\frac{m_1}{m_2} > \frac{25+\sqrt{621}}{2}\approx24.96.
+\end{equation}
+
+\noindent
+For reference, $m_1/m_2=81.27$ for the Earth-Moon system.
 
 %-------------------------------------------------------------------
 
