@@ -64,7 +64,7 @@ For a given Jacobi constant, the motion of a particle is limited to certain regi
 
 %-------------------------------------------------------------------
 \subsection{Equilibrium Point Locations}
-Complex dynamical system such as the CR3PB often times have equilibrium points that result in a constant solution to the system's differential equations. In the CR3BP, these points, known as Lagrange points, mark positions where the combined gravitational pull of the two large masses provides precisely the centripetal force required to orbit with them (i.e., the Lagrange points are stationary within the rotating system of the CR3BP). There are five such points labeled L$_1$ - L$_5$ located in the plane of the two primary masses. The first three Lagrange points lie on the line connecting the two primary bodies, and the last two points, L$_4$ and L$_5$, are located at the vertex of an equilateral triangle formed with the two primary bodies \cite{KoonLoMarsdenRoss2011}.
+Complex dynamical system such as the CR3PB often times have equilibrium points that result in a constant solution to the system's differential equations. In the CR3BP, these points, known as Lagrange points, mark positions where the combined gravitational pull of the two large masses provides precisely the centripetal force required to orbit with them (i.e., the Lagrange points are stationary within the rotating system of the CR3BP). There are five such points labeled L$_1$ - L$_5$ located in the plane of the two primary masses. The first three Lagrange points lie on the line connecting the two primary bodies, and the last two points, L$_4$ and L$_5$, are located at the vertex of an equilateral triangle formed with the two primary \textbf{bodies \cite{KoonLoMarsdenRoss2011}}.
 
 In order to find the location of the five equilibrium points in the CR3BP, the velocity and acceleration must be set to zero in the system's equations of motion. This results in the following equations:
 
@@ -122,15 +122,15 @@ Using the Earth-Moon CR3BP three-body parameter ($\mu = 0.012155$), Table \ref{t
 
 %-------------------------------------------------------------------
 \subsection{Equilibrium Point Stability}
-In this section a planar stability analysis is performed about each Lagrange point in the Earth-Moon CR3BP. This study entails linearizing the CR3BP equations of motion about each equilibrium solution and solving for the eigenvalues at the equilibrium point. The CR3BP equations of motion can be linearized by taking a Taylor series expansion of the ODE about each equilibrium point in the system. Neglecting higher order terms, the linearized equations of motion are give by
+In this section, a planar stability analysis is performed about each Lagrange point in the Earth-Moon CR3BP. This study entails linearizing the CR3BP equations of motion about each equilibrium solution and solving for the eigenvalues at the equilibrium point. The CR3BP equations of motion can be linearized by taking a Taylor series expansion of the ODE about each equilibrium point in the system. Neglecting higher order terms, the linearized equations of motion are give by
 
 \begin{equation}
 	\label{e:lin_eom}
-	\delta\begin{bmatrix}\dot{x}\\\dot{y}\\\ddot{x}\\\ddot{y}\end{bmatrix} = Df\left(x^*,y^*,\dot{x}^*,\dot{y}^*\right)\begin{bmatrix}x\\y\\\dot{x}\\\dot{y}\end{bmatrix}
+	\delta\begin{bmatrix}\dot{x}\\\dot{y}\\\ddot{x}\\\ddot{y}\end{bmatrix} = Df\left(x^*,y^*,\dot{x}^*,\dot{y}^*\right)\begin{bmatrix}x\\y\\\dot{x}\\\dot{y}\end{bmatrix},
 \end{equation}
 
 \noindent
-where,
+where
 
 \doublespacing
 \begin{equation}
@@ -157,21 +157,21 @@ For the CR3BP, Equation \ref{e:df_raw} evaluates to
 		0 & 0 & 0 & 1 \\
 		XX & XY & 0 & 2 \\
 		YX & YY & -2 & 0
-	\end{bmatrix}.
+	\end{bmatrix},
 \end{equation}
 \singlespacing
 
 \noindent
-where,
+where
 
 \begin{align}
-	XX &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu\left(\mu+x-1\right)\left(\mu+x-1\right)}{r_2^5} - \frac{3\left(\mu+x\right)\left(\mu+x\right)\left(\mu-1\right)}{r_1^5} + 1 \\
+	XX &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu\left(\mu+x-1\right)^2}{r_2^5} - \frac{3\left(\mu+x\right)^2\left(\mu-1\right)}{r_1^5} + 1 \\
 	XY &= YX = \frac{3\mu y\left(\mu+x-1\right)}{r_2^5} - \frac{3y\left(\mu+x\right)\left(\mu-1\right)}{r_1^5} \\
-	YY &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu y^2}{r_2^5} - \frac{3y^2\left(\mu-1\right)}{r_1^5} + 1
+	YY &= \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu y^2}{r_2^5} - \frac{3y^2\left(\mu-1\right)}{r_1^5} + 1.
 \end{align}
 
 \noindent
-By evaluating the matrix given in Equation \ref{e:df_eval} at the equilibrium points and finding the resulting eigenvalues of the matrix, the stability of that point can be studied.
+By evaluating the matrix given in Equation \ref{e:df_eval} at the equilibrium points and finding the resulting eigenvalues of the matrix, the stability of that point can be ascertained.
 
 \subsubsection{L$_1$, L$_2$, and L$_3$ Stability}
 It was visually shown in Figure \ref{f:lagrange_points} that L$_1$, L$_2$, and L$_3$ were saddle points. By plugging in the locations of the equilibrium points given in Table \ref{t:lagrange_points} along with the Earth-Moon three-body parameter ($\mu = 0.012155$), this claim can be mathematically validated. 
@@ -188,12 +188,12 @@ The evaluated $Df$ matrix for the L$_1$ Lagrange point is given by
 		0 & 0 & 0 & 1 \\
 		11.2955 & 0 & 0 & 2 \\
 		0 & -4.1478 & -2 & 0
-	\end{bmatrix}.
+	\end{bmatrix},
 \end{equation}
 \singlespacing
 
 \noindent
-where,
+where
 
 \begin{equation}
 	\label{e:evals_L1}
@@ -215,12 +215,12 @@ The evaluated $Df$ matrix for the L$_2$ Lagrange point is given by
 		0 & 0 & 0 & 1 \\
 		7.3807 & 0 & 0 & 2 \\
 		0 & -2.1903 & -2 & 0
-	\end{bmatrix}.
+	\end{bmatrix},
 \end{equation}
 \singlespacing
 
 \noindent
-where,
+where
 
 \begin{equation}
 	\label{e:evals_L2}
@@ -242,12 +242,12 @@ The evaluated $Df$ matrix for the L$_3$ Lagrange point is given by
 		0 & 0 & 0 & 1 \\
 		3.0214 & 0 & 0 & 2 \\
 		0 & -0.0107 & -2 & 0
-	\end{bmatrix}.
+	\end{bmatrix},
 \end{equation}
 \singlespacing
 
 \noindent
-where,
+where
 
 \begin{equation}
 	\label{e:evals_L3}
@@ -255,7 +255,7 @@ where,
 \end{equation}
 
 \noindent
-Once again, the evaluated $Df$ matrix has a positive, real eigenvalue resulting in the L$_3$ Lagrange point being unstable.The re-dimensionalized L$_3$ time constant is $\tau\approx4.30$ days.
+Once again, the evaluated $Df$ matrix has a positive, real eigenvalue resulting in the L$_3$ Lagrange point being unstable. The re-dimensionalized L$_3$ time constant is $\tau\approx4.30$ days.
 
 \subsubsection{L$_4$ and L$_5$ Stability}
 The stability analysis of the L$_4$ and L$_5$ Lagrange points yields a surprise. While these points correspond to local maxima of the total potential, they are stable due to a ``Coriolis'' force. Initially, a mass situated near L$_4$ or L$_5$ will tend to slide down the potential, but as it does, it picks up speed sending it into an orbit around the equilibrium point. To prove this, the evaluated $Df$ matrix for the L$_4$ and L$_5$ Lagrange points is given by
@@ -269,12 +269,12 @@ The stability analysis of the L$_4$ and L$_5$ Lagrange points yields a surprise.
 		0 & 0 & 0 & 1 \\
 		0.7500 & \pm1.2675 & 0 & 2 \\
 		\pm1.2675 & 2.2500 & -2 & 0
-	\end{bmatrix}.
+	\end{bmatrix},
 \end{equation}
 \singlespacing
 
 \noindent
-where,
+where
 
 \begin{equation}
 	\label{e:evals_L45}
@@ -282,23 +282,142 @@ where,
 \end{equation}
 
 \noindent
-As Equation \ref{e:evals_L45} shows, the L$_4$ and L$_5$ equilibrium points have purely imaginary eigenvalues in the Earth-Moon system resulting in Lyapunov stability. However, this is not always the case for a three body system. In order for the L$_4$ and L$_5$ Lagrange points to be stable, the primary masses of the system have to satisfy the follow inequality \cite{ScheersBook}
+As Equation \ref{e:evals_L45} shows, the L$_4$ and L$_5$ equilibrium points have purely imaginary eigenvalues in the Earth-Moon system resulting in Lyapunov stability. However, this is not always the case for a three body system. In order for the L$_4$ and L$_5$ Lagrange points to be stable, the primary masses of the system have to satisfy the follow \textbf{inequality \cite{ScheersBook}}
 
 \begin{equation}
 	\frac{m_1}{m_2} > \frac{25+\sqrt{621}}{2}\approx24.96.
 \end{equation}
 
 \noindent
-For reference, $m_1/m_2=81.27$ for the Earth-Moon system.
-
+For reference, $m_1/m_2=81.27$ for the Earth-Moon system. Now that the Earth-Moon equilibrium points have been identified, numerical methods can be used to generate families of periodic orbits about the points.
 %-------------------------------------------------------------------
 
 %-------------------------------------------------------------------
 \subsection{Periodic Orbits}
+The solution flow of a dynamical system is often times denoted $\bm{x}\left(t\right)=\bm{\varphi}\left(t;\bm{x}_0\right)$ with initial condition $\bm{x}\left(t_0\right)=\bm{\varphi}\left(t_0;\bm{x}_0\right)$. A periodic orbit is a solution of the system such that $\bm{\varphi}\left(t+T;\bm{x}_0\right) = \bm{\varphi}\left(t;\bm{x}_0\right)$ for all $t$ where $T>0$ is the period of the orbit. Lyapunov's Center Theorem then states that for a system with an integral of motion (the Jacobi constant in the case of the CR3BP), if $Df\left(\bm{x}^*\right)$ has eigenvalues $\pm i\omega, \lambda_3, \lambda_4,...,\lambda_n$, then there exists a one-parameter family of periodic orbits emanating from the equilibrium point. Furthermore, periods tend to $2\pi/\omega$ when approaching the equilibrium point along the \textbf{family \cite{MeyerandHallBook}}. Using this knowledge, one of the most straightforward methods used to solve for periodic orbit families is to make educated guesses at individual periodic orbit initial conditions and then use a single shooter algorithm to correct them. 
 
-\subsubsection{Predictor-Corrector Method}
+\subsubsection{Family Finding Algorithm}
+The family finding algorithm (FFA) begins by determining the dynamical system's fundamental matrix $\Phi\left(t,t_0\right)$. In a system as complicated as the CR3BP, $\Phi$ must be computed numerically through the following differential equation
+
+\begin{equation}
+	\dot{\Phi}=Df\left(\bm{x}\right)\Phi \text{ with } \Phi\left(t_0,t_0\right)=\mathcal{I}.
+\end{equation}
+
+\noindent
+The full dynamics matrix $Df$, which was touched on in Equation \ref{e:df_eval}, is given by
+
+\doublespace
+\begin{equation}
+	\label{e:df_full}
+	Df = \begin{bmatrix}
+		0_{3\times3} & \mathcal{I}_{3\times3} \\
+		\Omega_{i,j} & V
+	\end{bmatrix}
+\end{equation}
+\singlespace
+
+\noindent
+where, $0$ is a $3\times3$ zero matrix, $\mathcal{I}$ is a $3\times3$ identity matrix, $V$ is given by
+
+\begin{equation}
+	V = \begin{bmatrix}
+		0 & 2 & 0 \\
+		-2 & 0 & 0 \\
+		0 & 0 & 0
+	\end{bmatrix},
+\end{equation}
+
+\noindent
+and $\Omega_{i,j}$ is a $3\times3$ matrix of second order partial derivatives ($\Omega_{i,j}$ = $\Omega_{j,i}$) given by
+
+\begin{align}
+	\Omega_{x,x} &= \frac{\partial\ddot{x}}{\partial x} = \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu\left(\mu+x-1\right)^2}{r_2^5} - \frac{3\left(\mu+x\right)^2\left(\mu-1\right)}{r_1^5} + 1 \\
+	\Omega_{y,y} &= \frac{\partial\ddot{y}}{\partial y} = \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu y^2}{r_2^5} - \frac{3y^2\left(\mu-1\right)}{r_1^5} + 1 \\
+	\Omega_{z,z} &= \frac{\partial\ddot{z}}{\partial z} = \frac{\mu - 1}{r_1^3} - \frac{\mu}{r_2^3} + \frac{3\mu z^2}{r_2^5} - \frac{3z^2\left(\mu-1\right)}{r_1^5} \\
+	\Omega_{x,y} &= \frac{\partial\ddot{x}}{\partial y} = \frac{3\mu y\left(\mu+x-1\right)}{r_2^5} - \frac{3y\left(\mu+x\right)\left(\mu-1\right)}{r_1^5} \\
+	\Omega_{y,z} &= \frac{\partial\ddot{y}}{\partial z} = \frac{3\mu z\left(\mu+x-1\right)}{r_2^5} - \frac{3z\left(\mu+x\right)\left(\mu-1\right)}{r_1^5}\\
+	\Omega_{z,x} &= \frac{\partial\ddot{z}}{\partial x} = \frac{3\mu yz}{r_2^5} - \frac{3yz\left(\mu-1\right)}{r_1^5}.
+\end{align}
+
+\noindent
+Using the aforementioned Lyapunov Center Theorem, the FFA is initiated by perturbing the equilibrium point of interest in the direction of a center manifold (purely imaginary eigenvalue) by a small amount ($\epsilon < 1\times10^{-4}$). This results in the ``smallest'' periodic orbit around the equilibrium point. The period of the orbit is then determined by the value of the eigenvalue ($T=2\pi/\lambda$). To continue the FFA, future periodic orbit initial conditions ($\bm{x}_0, T$) are calculated by adding small perturbations to the previous periodic orbit initial conditions ($\tilde{\bm{x}}_0, \tilde{T}$) in the orbit tangent direction ($\tilde{\bm{x}}_0^{\prime}, \tilde{T}^{\prime}$). This update is mathematically shown as follow
+
+\begin{align}
+	\bm{x}_0 &= \tilde{\bm{x}}_0 + \Delta s\tilde{\bm{x}}_0^{\prime} \\
+	T &= \tilde{T} + \Delta s\tilde{T}^{\prime},
+\end{align}
+
+\noindent
+where $\Delta s$ is the step size between the original periodic orbit and the new periodic orbit and ($\tilde{\bm{x}}_0^{\prime}, \tilde{T}^{\prime}$) is the change in ($\bm{x}_0, T$) between two previous orbits. In order to insure that the new periodic orbit is part of the periodic orbit family, two important constraints must be satisfied. The first constraint, known as the Poincar\'{e} phase condition, which assumes that a periodic orbit in the family has already been computed, states that 
+
+\begin{equation}
+	<\bm{x}_0 - \tilde{\bm{x}}_0, \bm{f}\left(\tilde{\bm{x}}_0\right)> = 0,
+\end{equation}
+
+\noindent
+where $\bm{f}\left(\bm{x}\right)$ are the dynamics of the CR3BP evaluated at some state. The second constraint, known as the pseudo-arclength continuation constraint, which assumes that a periodic orbit in the family and an approximation of the tangent to the solution family has already been computed, states that
+
+\begin{equation}
+<\bm{x}_0 - \tilde{\bm{x}}_0, \tilde{\bm{x}}_0^{\prime}> + \left(T-\tilde{T}\right)\tilde{T}^{\prime} = \Delta s.
+\end{equation}
+
+\noindent
+Using these constraints, a system of equations for the FFA is given by
+
+\doublespace
+\begin{equation}
+	\label{e:ffa_constraints}
+	\begin{bmatrix}
+	\bm{\varphi}\left(T;\bm{x}_0\right) - \bm{x}_0 \\
+	<\bm{x}_0 - \tilde{\bm{x}}_0, \bm{f}\left(\tilde{\bm{x}}_0\right)> \\
+	<\bm{x}_0 - \tilde{\bm{x}}_0, \tilde{\bm{x}}_0^{\prime}> + \left(T-\tilde{T}\right)\tilde{T}^{\prime} - \Delta s
+	\end{bmatrix} = \bm{F}\left(\bm{x}_0, T\right) = \bm{0},
+\end{equation}
+\singlespace
+
+\noindent
+where $\bm{x}_0$ and $T$ are unknowns. This system of equations is then solved using a single shooter \textbf{algorithm \cite{SingleShooter}} which is given in the form
+
+\doublespace
+\begin{equation}
+	\label{e:singleshooter}
+	\begin{bmatrix}
+	\Phi\left(T\right) - \mathcal{I}_{n\times n} & \bm{f}\left(\bm{x}\left(T\right)\right) \\
+	\dot{\tilde{\bm{x}}}_0 & 0 \\
+	\tilde{\bm{x}}_0^{\prime} & \tilde{T}^{\prime} \\
+	\end{bmatrix} \begin{bmatrix}
+	\delta\bm{x}_0 \\
+	\delta T
+	\end{bmatrix} = -\bm{F}\left(\bm{x}_0, T\right),
+\end{equation}
+\singlespace
+
+\noindent
+where $\delta\bm{x}_0$ and $\delta T$ are updates to the initial conditions of the new periodic orbit. Since the single shooter algorithm uses a first-order Newton-Raphson method, Equation \ref{e:singleshooter} is iterated until convergence. Furthermore, since this system is overdetermined ($n+2$ equations and $n+1$ unknowns), a pseudo-inverse is used when solving for $\delta\bm{x}_0$ and $\delta T$. An example of the single shooter algorithm correcting a periodic orbit is shown in Figure \ref{f:singleshooter}. Using this FFA, a periodic orbit family can be calculated with minimal a priori knowledge for as many number of periodic orbits as desired. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6in]{po_corrected.png}
+    \caption{This figure shows the single shooter algorithm correcting a periodic orbit. Figure (a) shows the uncorrected orbit, and Figure (b) shows the correct orbit.}
+    \label{f:singleshooter}
+\end{figure}
 
 \subsubsection{Orbit Families}
+In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist in the three-body problem. These solutions come in a variety of forms that include planar Lypaunov periodic orbits, 3-dimensional clamshell orbits, 3-dimensional halo orbits, and many others. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{lyapunov_po_comb.png}
+    \caption{This figure shows the single shooter algorithm correcting a periodic orbit. Figure (a) shows the uncorrected orbit, and Figure (b) shows the correct orbit.}
+    \label{f:lyapunov_po}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{L1_clamshell_comb.png}
+    \caption{This figure shows the single shooter algorithm correcting a periodic orbit. Figure (a) shows the uncorrected orbit, and Figure (b) shows the correct orbit.}
+    \label{f:clamshell_po}
+\end{figure}
 
 %-------------------------------------------------------------------
 

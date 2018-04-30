@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 APR 2018 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 APR 2018 07:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,42 +685,82 @@ ne 116.
 
 LaTeX Warning: Citation `ScheersBook' on page 7 undefined on input line 285.
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+LaTeX Warning: Citation `MeyerandHallBook' on page 7 undefined on input line 29
+7.
+
+[7] [8]
+
+LaTeX Warning: Citation `SingleShooter' on page 9 undefined on input line 379.
+
+[9] <../figures/po_corrected.png, id=49, 789.6702pt x 345.9324pt>
+File: ../figures/po_corrected.png Graphic file (type png)
+
+<use ../figures/po_corrected.png>
+Package pdftex.def Info: ../figures/po_corrected.png used on input line 400.
+(pdftex.def)             Requested size: 433.62pt x 189.95724pt.
+
+<../figures/lyapunov_po_comb.png, id=50, 690.4194pt x 523.7166pt>
+File: ../figures/lyapunov_po_comb.png Graphic file (type png)
+
+<use ../figures/lyapunov_po_comb.png>
+Package pdftex.def Info: ../figures/lyapunov_po_comb.png used on input line 410
+.
+(pdftex.def)             Requested size: 361.34999pt x 274.10027pt.
+ [10 <../figures/po_corrected.png>]
+<../figures/L1_clamshell_comb.png, id=55, 703.428pt x 528.5346pt>
+File: ../figures/L1_clamshell_comb.png Graphic file (type png)
+
+<use ../figures/L1_clamshell_comb.png>
+Package pdftex.def Info: ../figures/L1_clamshell_comb.png used on input line 41
+7.
+(pdftex.def)             Requested size: 361.34999pt x 271.50882pt.
+ [11 <../figures/lyapunov_po_comb.png> <../figures/L1_clamshell_comb.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
-[8]
+[12]
 No file don_report.bbl.
 (./don_report.aux)
 
 LaTeX Warning: There were undefined references.
 
- ) 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 3)
+
+### semi simple group (level 3) entered at line 381 (\begingroup)
+### semi simple group (level 2) entered at line 367 (\begingroup)
+### semi simple group (level 1) entered at line 309 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 4435 strings out of 493014
- 63700 string characters out of 6133351
- 144609 words of memory out of 5000000
- 7898 multiletter control sequences out of 15000+600000
+ 4458 strings out of 493014
+ 64302 string characters out of 6133351
+ 145663 words of memory out of 5000000
+ 7918 multiletter control sequences out of 15000+600000
  12784 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,16n,39p,1230b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on don_report.pdf (8 pages, 855289 bytes).
+ 38i,16n,39p,1230b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mib10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on don_report.pdf (12 pages, 1881216 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
