@@ -348,7 +348,7 @@ Using the aforementioned Lyapunov Center Theorem, the FFA is initiated by pertur
 \end{align}
 
 \noindent
-where $\Delta s$ is the step size between the original periodic orbit and the new periodic orbit and ($\tilde{\bm{x}}_0^{\prime}, \tilde{T}^{\prime}$) is the change in ($\bm{x}_0, T$) between two previous orbits. In order to insure that the new periodic orbit is part of the periodic orbit family, two important constraints must be satisfied. The first constraint, known as the Poincar\'{e} phase condition, which assumes that a periodic orbit in the family has already been computed, states that 
+where $\Delta s$ is the step size between the original periodic orbit and the new periodic orbit and the orbit tangent direction is approximated by the change in the initial conditions between two previous orbits. In order to insure that the new periodic orbit is part of the periodic orbit family, two important constraints must be satisfied. The first constraint, known as the Poincar\'{e} phase condition, which assumes that a periodic orbit in the family has already been computed, states that 
 
 \begin{equation}
 	<\bm{x}_0 - \tilde{\bm{x}}_0, \bm{f}\left(\tilde{\bm{x}}_0\right)> = 0,
@@ -403,18 +403,18 @@ where $\delta\bm{x}_0$ and $\delta T$ are updates to the initial conditions of t
 \end{figure}
 
 \subsubsection{Orbit Families}
-In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist in the three-body problem. These solutions come in a variety of forms that include planar Lypaunov periodic orbits, 3-dimensional clamshell orbits, 3-dimensional halo orbits, and many others. All of these periodic orbit solutions intersect and merge with one another through complex interactions and bifurcations. Figure \ref{f:lagrange_points} shows an example of planar Lypaunov periodic orbit families calculated with the aforementioned FFA about each of the five Lagrange points. Additionally, Figure \ref{f:clamshell_po} shows 3-dimensional clamshell orbits about L$_1$. 
+In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist in the three-body problem. These solutions come in a variety of forms that include planar Lypaunov periodic orbits, 3-dimensional clamshell orbits, 3-dimensional halo orbits, and many others. All of these periodic orbit solutions intersect and merge with one another through complex interactions and bifurcations. Using the previously described FFA, all of these periodic orbit families can be cataloged. Figure \ref{f:lagrange_points} shows an example of planar Lypaunov periodic orbit families calculated about each of the five Lagrange points. Additionally, Figure \ref{f:clamshell_po} shows 3-dimensional clamshell orbits about L$_1$. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{lyapunov_po_comb.png}
+    \includegraphics[width=\textwidth]{lyapunov_po_comb.png}
     \caption{This figure shows planar Lypaunov periodic orbit families about each of the five Lagrange points. Figure (a) shows orbits about L$_1$, Figure (b) shows orbits about L$_2$, Figure (c) shows orbits about L$_3$, Figure (d) shows orbits about L$_{4,5}$.}
     \label{f:lyapunov_po}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{L1_clamshell_comb.png}
+    \includegraphics[width=\textwidth]{L1_clamshell_comb.png}
     \caption{This figure shows a family of 3-dimensional clamshell orbits about L$_1$.}
     \label{f:clamshell_po}
 \end{figure}
@@ -422,38 +422,55 @@ In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist
 %-------------------------------------------------------------------
 
 %-------------------------------------------------------------------
-\subsection{Periodic Orbit Manifolds}
+\subsection{Periodic Orbit Stability and Manifolds}
+In dynamical systems, periodic orbits are invariant sets (i.e., for each $x \in \Lambda, \varphi\left(t;x\right)\in\Lambda$ for any $t$), and as such, their stability can be discussed. In order to determine the stability of a periodic orbit, the eigenvalues of the orbit's Monodromy matrix, which is defined as a periodic orbit's fundamental matrix evaluated after one period $T$ (i.e., $M=\Phi\left(t_0+T,t_0\right)$), need to be analyzed. For the CR3BP, the Monodromy matrix has six eigenvalues and six corresponding eigenvectors. Since $M$ is symplectic, the eigenvalues will come in 3 pairs with one of the pairs always being equal to 1. The relationship between the eigenvalues is as follows
+
+\begin{align}
+	\lambda_1 &= \frac{1}{\lambda_2}\\
+	\lambda_3 &= \frac{1}{\lambda_4}\\
+	\lambda_5 &= \lambda_6 = 1.
+\end{align}
+
+\noindent
+The eigenvalues of the Monodromy matrix determine the effect of small perturbations on a periodic orbit. If the real components of the eigenvalue are between -1 and 1, a perturbation in that direction will exponentially decay and the orbit is considered stable. Conversely, if the real components are outside of -1 and 1, a perturbation in that direction will exponentially grow and the orbit is considered unstable. If the eigenvalue is only imaginary, then the perturbation will oscillate about the original state after each period. Finally, if the eigenvalues are equal to 1, the perturbation does not grow or decay (unit eigenvalues are therefore normally ignored).
+
+In order to map a stable or unstable manifold of a periodic orbit, the initial conditions of the orbit must be perturbed in the direction of the manifold (i.e., in the direction of the eigenvector corresponding to the manifold of interest). To fully map these manifolds, the periodic orbit needs to be perturbed at many points along its trajectory. This is accomplished by using the fundamental matrix to map the original stable or unstable eigenvector $\bm{v}^{S,U}$ from $M$ to any point on the periodic orbit (i.e., $\bm{v}_i^{S,U}=\Phi\left(t_i,t_0\right)\bm{v}^{S,U}$). The periodic orbit is then perturbed by a small amount ($\epsilon < 1\times10^{-4}$) in the direction of the mapped eigenvector (i.e., $\bm{x}_{i}^{S,U}=\bm{x}_{i}\pm\epsilon|\bm{v}_i^{S,U}|$). To see the shape of each manifold, the unstable manifold is then propagated forward in time while the stable manifold is propagated backwards in time. Each periodic orbit in the CR3BP has both interior and exterior stable and unstable manifolds depending on the sign of the applied perturbation. Figure \ref{f:manifolds} shows the exterior stable (green) and unstable (red) manifolds of a L$_2$ Lyapunov periodic orbit. As Figure \ref{f:manifolds} shows, these manifolds are intricate structures that extend far into the CR3BP phase space. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{manifold_comb.png}
-    \caption{This figure shows...}
+    \includegraphics[width=\textwidth]{manifold_comb.png}
+    \caption{This figure shows the exterior stable (green) and unstable (Red) manifolds of a L$_2$ Lyapunov periodic orbit.}
     \label{f:manifolds}
 \end{figure}
 %-------------------------------------------------------------------
 
 %-------------------------------------------------------------------
 \subsection{Poincar\'{e} Sections and Homoclinic Orbits}
+In a dynamical system, an orbit $\Gamma$ is homoclinic if each $x\in\Gamma$ is both forward and backwards asymptotic to the same invariant set $\Lambda$. In other words, this means that for any $x\in\Gamma$ as $t\rightarrow\pm\infty$, $x\rightarrow\Lambda$. In order for this to occur, a homoclinic orbit must be contained in the intersection of the stable $W^S\left(\Lambda\right)$ and unstable $W^U\left(\Lambda\right)$ manifolds of the invariant set (i.e., $\Gamma\subset W^S\left(\Lambda\right)\cap W^U\left(\Lambda\right)$). Classically, a mathematical technique known as a Poincar\'{e} section is used to find the intersection of $W^S\left(\Lambda\right)$ and $W^U\left(\Lambda\right)$. 
+
+In the CR3BP, a Poincar\'{e} section, which is defined as lower dimensional surface of section that is transverse to the flow of a dynamical system, is used to map the characteristics of the stable ($W^S\left(\Lambda\right)$) and unstable ($W^U\left(\Lambda\right)$) manifolds of a periodic orbit ($\Lambda$). Figure \ref{f:poincare} shows an example of a Poincar\'{e} section for two different periodic orbits about the L$_2$ Lagrange point. In the CR3BP, a common Poincar\'{e} section for the L$_2$ Lagrange point is the surface $y=0$ and $x<0$. This surface is indicated in Figure \ref{f:poincare}a and Figure \ref{f:poincare}b as the thick black line at $y=0$. In order to find the intersection of the stable (green) and unstable (red) manifolds of the periodic orbit, both manifolds are propagated (as described in the previous section) to the Poincar\'{e} section where their $x$-position and $x$-velocity are recorded. The position and velocity of both manifolds are then plotted against one another, as shown in Figure \ref{f:poincare}c and Figure \ref{f:poincare}d, to determine if there is any intersection points between the two manifolds (i.e., $\Gamma\subset W^S\left(\Lambda\right)\cap W^U\left(\Lambda\right)$). In other words, the intersections of the stable and unstable manifolds on the Poincar\'{e} section represent the location of homoclinic orbits. A careful inspection of Figure \ref{f:poincare}d reveals that there are eight intersection points in between $W^S\left(\Lambda\right)$ and $W^U\left(\Lambda\right)$ corresponding to eight different homoclinic orbits for the periodic orbit in question. However, it is important to note that not every periodic orbit has homoclinic trajectories, as Figure \ref{f:poincare}c shows. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{poincare_comb.png}
-    \caption{This figure shows...}
+    \includegraphics[width=\textwidth]{poincare_comb.png}
+    \caption{This figure shows the construction of a Poincar\'{e} section for two different periodic orbits about the L$_2$ Lagrange point.}
     \label{f:poincare}
 \end{figure}
 
+Figure \ref{f:sym_homo}a takes a closer look at the intersection of the stable and unstable manifolds the periodic orbit shown in Figure \ref{f:poincare}b. As Figure \ref{f:sym_homo}a shows, there are four intersection points located on the line $\dot{x}=0$ and four points located off of line $\dot{x}=0$. The manifold intersection points that lie on the line $\dot{x}=0$ represent symmetric homoclinic orbits, whereas the points that lie off the line represent asymmetric homoclinic orbits. An example of these different types of orbits can be seen in Figure \ref{f:sym_homo}b and Figure \ref{f:asym_homo}b, respectively. As Figure \ref{f:sym_homo}b and Figure \ref{f:asym_homo}b show, the two homoclinic orbits depart from the periodic orbit on the unstable manifold (red) and return to the periodic orbit on the stable manifold (green). Finding the exact initial conditions for homoclinic orbits is quite difficult due to the sensitivity of initial conditions of the CR3BP, but we did it!
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{sym_homo_comb.png}
-    \caption{This figure shows...}
+    \includegraphics[width=\textwidth]{sym_homo_comb.png}
+    \caption{This figure shows a symmetric homoclinic orbit about the L$_2$ Lagrange point. The grey dot in Figure (a) represents the homoclinic orbit investigated.}
     \label{f:sym_homo}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{asym_homo_comb.png}
-    \caption{This figure shows...}
-    \label{f:asy_homo}
+    \includegraphics[width=\textwidth]{asym_homo_comb.png}
+    \caption{This figure shows a asymmetric homoclinic orbit about the L$_2$ Lagrange point. The grey dot in Figure (a) represents the homoclinic orbit investigated.}
+    \label{f:asym_homo}
 \end{figure}
 
 %-------------------------------------------------------------------
@@ -464,8 +481,8 @@ In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=6in]{interior_exterior.png}
-    \caption{This figure \textbf{shows... \cite{KoonLoMarsdenRoss2011}}.}
+    \includegraphics[width=5in]{interior_exterior.png}
+    \caption{This figure shows a full mapping of the interior and exterior, stable and unstable, L$_1$ and L$_2$ Lagrange points to appropriate Poincar\'{e} \textbf{sections \cite{KoonLoMarsdenRoss2011}.}}
     \label{f:interior_exterior}
 \end{figure}
 
