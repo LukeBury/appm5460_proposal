@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 MAY 2018 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 MAY 2018 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,9 +765,15 @@ File: ../figures/interior_exterior.png Graphic file (type png)
 Package pdftex.def Info: ../figures/interior_exterior.png used on input line 50
 3.
 (pdftex.def)             Requested size: 361.34999pt x 299.68044pt.
- [17 <../figures/sym_homo_comb.png> <../figures/asym_homo_comb.png>] [18 <../fi
-gures/interior_exterior.png>]
-(./report5460.bbl) [19] (./report5460.aux)
+ [17 <../figures/sym_homo_comb.png> <../figures/asym_homo_comb.png>]
+<../figures/MoonTransfer.png, id=94, 548.0475pt x 492.84125pt>
+File: ../figures/MoonTransfer.png Graphic file (type png)
+
+<use ../figures/MoonTransfer.png>
+Package pdftex.def Info: ../figures/MoonTransfer.png used on input line 510.
+(pdftex.def)             Requested size: 361.34999pt x 324.95285pt.
+ [18 <../figures/interior_exterior.png>]
+[19 <../figures/MoonTransfer.png>] (./report5460.bbl) [20] (./report5460.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -779,10 +785,10 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 326 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4544 strings out of 492995
- 66291 string characters out of 6132704
- 145574 words of memory out of 5000000
- 8001 multiletter control sequences out of 15000+600000
+ 4551 strings out of 492995
+ 66463 string characters out of 6132704
+ 145587 words of memory out of 5000000
+ 8007 multiletter control sequences out of 15000+600000
  13130 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,16n,39p,1851b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -800,10 +806,10 @@ pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report5460.pdf (19 pages, 3620279 bytes).
+Output written on report5460.pdf (20 pages, 3745269 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

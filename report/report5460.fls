@@ -168,6 +168,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT ../figures/interior_exterior.png
 INPUT ../figures/interior_exterior.png
 INPUT ../figures/interior_exterior.png
+INPUT ../figures/MoonTransfer.png
+INPUT ../figures/MoonTransfer.png
+INPUT ../figures/MoonTransfer.png
 INPUT report5460.bbl
 INPUT report5460.bbl
 INPUT report5460.aux
