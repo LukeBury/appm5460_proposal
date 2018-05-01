@@ -101,7 +101,7 @@ If $y$ is set to zero, a quintic equation in $x$ emerges. Solving this equation 
 \end{align}
 
 \noindent
-Using Equations \ref{e:L1_loc}-\ref{e:L3_loc} as initial conditions, a Newton-Raphson iteration can then be used to numerically find the location of the first three Lagrange points to machine precision. Equations \ref{e:eomx_zero}-\ref{e:eomz_zero} can also be used to find the two triangular equilibrium points, L$_4$ and L$_5$. Since these equilibrium points form an equilateral triangle with the primary bodies \cite{KoonLoMarsdenRoss2011m an }, $r_1 = r_2 = 1$ is substituted into Equation \ref{e:eomx_zero} and Equation \ref{e:eomy_zero}. These equations are subsequently solved to provide the exact locations for the remaining equilibrium points:
+Using Equations \ref{e:L1_loc}-\ref{e:L3_loc} as initial conditions, a Newton-Raphson iteration can then be used to numerically find the location of the first three Lagrange points to machine precision. Equations \ref{e:eomx_zero}-\ref{e:eomz_zero} can also be used to find the two triangular equilibrium points, L$_4$ and L$_5$. Since these equilibrium points form an equilateral triangle with the primary bodies \cite{KoonLoMarsdenRoss2011}, $r_1 = r_2 = 1$ is substituted into Equation \ref{e:eomx_zero} and Equation \ref{e:eomy_zero}. These equations are subsequently solved to provide the exact locations for the remaining equilibrium points:
 
 \begin{align}
 	L_4 &= \left(\frac{1}{2}-\mu, \frac{\sqrt{3}}{2},0\right)\\
@@ -299,7 +299,7 @@ where
 \end{equation}
 
 \noindent
-As Equation \ref{e:evals_L45} shows, the L$_4$ and L$_5$ equilibrium points have purely imaginary eigenvalues in the Earth-Moon system resulting in Lyapunov stability. However, this is not always the case for a three body system. In order for the L$_4$ and L$_5$ Lagrange points to be stable, the primary masses of the system have to satisfy the following \textbf{inequality \cite{ScheersBook}}
+As Equation \ref{e:evals_L45} shows, the L$_4$ and L$_5$ equilibrium points have purely imaginary eigenvalues in the Earth-Moon system resulting in Lyapunov stability. However, this is not always the case for a three body system. In order for the L$_4$ and L$_5$ Lagrange points to be stable, the primary masses of the system have to satisfy the following inequality \cite{Scheeres2016}
 
 \begin{equation}
 	\frac{m_1}{m_2} > \frac{25+\sqrt{621}}{2}\approx24.96.
@@ -311,7 +311,7 @@ For reference, $m_1/m_2=81.27$ for the Earth-Moon system. Now that the Earth-Moo
 
 %-------------------------------------------------------------------
 \subsection{Periodic Orbits}
-The solution flow of a dynamical system is often times denoted $\bm{x}\left(t\right)=\bm{\varphi}\left(t;\bm{x}_0\right)$ with initial condition $\bm{x}\left(t_0\right)=\bm{\varphi}\left(t_0;\bm{x}_0\right)$. A periodic orbit is a solution of the system such that $\bm{\varphi}\left(t+T;\bm{x}_0\right) = \bm{\varphi}\left(t;\bm{x}_0\right)$ for all $t$ where $T>0$ is the period of the orbit. Lyapunov's Center Theorem states that for a system with an integral of motion (the Jacobi constant in the case of the CR3BP), if $Df\left(\bm{x}^*\right)$ has eigenvalues $\pm i\omega, \lambda_3, \lambda_4,...,\lambda_n$ (i.e., at least one center manifold), then there exists a one-parameter family of periodic orbits emanating from the equilibrium point. Furthermore, periods tend toward $2\pi/\omega$ when approaching the equilibrium point along the \textbf{family \cite{MeyerandHallBook}}. Using this knowledge, one of the most straightforward methods used to solve for periodic orbit families is to make educated guesses at individual periodic orbit initial conditions and then use a single shooter algorithm to correct them. 
+The solution flow of a dynamical system is often times denoted $\bm{x}\left(t\right)=\bm{\varphi}\left(t;\bm{x}_0\right)$ with initial condition $\bm{x}\left(t_0\right)=\bm{\varphi}\left(t_0;\bm{x}_0\right)$. A periodic orbit is a solution of the system such that $\bm{\varphi}\left(t+T;\bm{x}_0\right) = \bm{\varphi}\left(t;\bm{x}_0\right)$ for all $t$ where $T>0$ is the period of the orbit. Lyapunov's Center Theorem states that for a system with an integral of motion (the Jacobi constant in the case of the CR3BP), if $Df\left(\bm{x}^*\right)$ has eigenvalues $\pm i\omega, \lambda_3, \lambda_4,...,\lambda_n$ (i.e., at least one center manifold), then there exists a one-parameter family of periodic orbits emanating from the equilibrium point. Furthermore, periods tend toward $2\pi/\omega$ when approaching the equilibrium point along the family \cite{MeyerHallOffin2016}. Using this knowledge, one of the most straightforward methods used to solve for periodic orbit families is to make educated guesses at individual periodic orbit initial conditions and then use a single shooter algorithm to correct them. 
 
 \subsubsection{Family Finding Algorithm}
 The family finding algorithm (FFA) begins by determining the dynamical system's fundamental matrix $\Phi\left(t,t_0\right)$. In a system as complicated as the CR3BP, $\Phi$ must be computed numerically through the following differential equation
@@ -393,7 +393,7 @@ Using these constraints, a system of equations for the FFA is given by
 \singlespace
 
 \noindent
-where $\bm{x}_0$ and $T$ are unknowns. This system of equations is then solved using a single shooter \textbf{algorithm \cite{SingleShooter}} which is given in the form
+where $\bm{x}_0$ and $T$ are unknowns. This system of equations is then solved using a single shooter algorithm \cite{NumericalRecipies2007} which is given in the form
 
 \doublespace
 \begin{equation}
@@ -420,7 +420,7 @@ where $\delta\bm{x}_0$ and $\delta T$ are updates to the initial conditions of t
 \end{figure}
 
 \subsubsection{Orbit Families}
-In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist in the three-body problem \color{red}\textbf{Citation???}\color{black}. These solutions come in a variety of forms that include planar Lypaunov periodic orbits, 3-dimensional clamshell orbits, 3-dimensional halo orbits, and many others. All of these periodic orbit solutions intersect and merge with one another through complex interactions and bifurcations. Using the previously described FFA, all of these periodic orbit families can be cataloged. Figure \ref{f:lagrange_points} shows an example of planar Lypaunov periodic orbit families calculated about each of the five Lagrange points. Additionally, Figure \ref{f:clamshell_po} shows 3-dimensional clamshell orbits about L$_1$. 
+In 1892, Poincar\'{e} showed that an infinite number of periodic solutions exist in the three-body problem \cite{BarrowGreen1994}. These solutions come in a variety of forms that include planar Lypaunov periodic orbits, 3-dimensional clamshell orbits, 3-dimensional halo orbits, and many others. All of these periodic orbit solutions intersect and merge with one another through complex interactions and bifurcations. Using the previously described FFA, all of these periodic orbit families can be cataloged. Figure \ref{f:lagrange_points} shows an example of planar Lypaunov periodic orbit families calculated about each of the five Lagrange points. Additionally, Figure \ref{f:clamshell_po} shows 3-dimensional clamshell orbits about L$_1$. 
 
 \begin{figure}[H]
     \centering

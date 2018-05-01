@@ -17,16 +17,33 @@ J.~Barrow-Green.
 \newblock American Mathematical Society, 1997.
 
 \bibitem{Gomez2004}
-Koon W. S. Lo M. W. Marsden J. E. Ross S.~D. Gomez, G.
+G.~Gomez, W.~S. Koon, M.~W. Lo, J.~E., Marsden, and S.~D. Ross.
 \newblock Connecting orbits and invariant manifolds in the spatial restricted
   three-body problem.
 \newblock {\em Institute of Physics Publishing - Nonlinearity}, 17:1571--1606,
   2004.
 
 \bibitem{KoonLoMarsdenRoss2011}
-Lo~M. Marsden J. Ross~S. Sang~Koon, W.
+W.~S. Koon, M.~W. Lo, J.~E., Marsden, and S.~D. Ross.
 \newblock {\em Dynamical Systems, The Three-Body Problem, and Space Mission
   Design}.
 \newblock Marsden Books, 2011.
+
+\bibitem{MeyerHallOffin2016}
+Kenneth Meyer, Glen Hall, and Dan Offin.
+\newblock {\em Introduction to Hamiltonian Dynamical Systems and the N-body
+  Problem}.
+\newblock Springer, 2008.
+
+\bibitem{NumericalRecipies2007}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
+\newblock {\em Numerical recipes 3rd Edition: The Art of Scientific Computing}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{Scheeres2016}
+Daniel~J. Scheeres.
+\newblock {\em Orbital Motion in Strongly Perturbed Environments: Applications
+  to Asteroid, Comet, and Planetary Satellite Orbiters}.
+\newblock Springer, 2016.
 
 \end{thebibliography}
