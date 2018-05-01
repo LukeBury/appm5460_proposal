@@ -13,7 +13,7 @@
 \usepackage{setspace} % allows for \doublespacing and \singlespacing
 
 %==================================================================
-\title{A Discussion of Homoclinic Orbits in the Circular Restricted Three-Body Problem}
+\title{An Investigation of Homoclinic Orbits in the Circular Restricted Three-Body Problem}
 \author{Luke Bury \& Don Kuettel}
 %==================================================================
 \begin{document}
@@ -495,26 +495,16 @@ Figure \ref{f:sym_homo}a takes a closer look at the intersection of the stable a
 %-------------------------------------------------------------------
 \section{Conclusion}
 
-Although the process of identifying homoclinic orbits is highly involved and computationally expensive, it teaches us much about the intricacies of these dynamic systems. For example, in mission design, a complete understanding of periodic orbits is very helpful for designing trajectories with repeating ground-tracks that may be ideal for scientific investigation. Further, the stable and unstable manifolds of these periodic orbits can be used to target periodic orbits from far away, and for transporting a spacecraft around a system for very little $\Delta V$. Figure \ref{f:manifolds} makes this clear by illustrating both the interior and exterior manifolds of L$_1$ and L$_2$ periodic orbits. In the figure, trajectories connecting the manifolds at $U_1$ and $U_4$ are homoclinic orbits. However, the manifolds shown at $U_2$ and $U_3$ originate from different periodic orbits; trajectories connecting these manifolds are known as heteroclinic orbits. In addition to allowing a spacecraft to traverse a single 3-body system, stable and unstable manifolds from different 3-body systems can be patched together to create a strategy for exploring multi-body systems with minimal fuel use, as shown in Figure \ref{fig:MoonTransfer}.
+Although the process of identifying homoclinic orbits is highly involved and computationally expensive, it exposes much about the intricacies of these dynamical systems. For example, in mission design, a complete understanding of periodic orbits is very helpful for designing trajectories with repeating ground-tracks that may be ideal for scientific investigation. Furthermore, the stable and unstable manifolds of these periodic orbits can be used to target periodic orbits from far away and for transporting a spacecraft around a system for very little fuel costs. Figure \ref{fig:conc_pic}a makes this clear by illustrating both the interior and exterior manifolds of L$_1$ and L$_2$ periodic orbits. In the figure, trajectories connecting the manifolds at $U_1$ and $U_4$ are homoclinic orbits. On the contrary, the manifolds shown at $U_2$ and $U_3$ originate from different periodic orbits. Trajectories connecting these manifolds are known as heteroclinic orbits. In addition to allowing a spacecraft to traverse a single three-body system, heteroclinic orbits from stable and unstable manifolds from different three-body systems can be patched together to create a strategy for exploring multi-body systems with minimal fuel use, as shown in Figure \ref{fig:conc_pic}b.
 
 Henri Poincaré was ashamed for making such a critical mistake in his award-winning submission to Acta Mathematica, but in doing so he discovered homoclinic orbits and greatly expanded the field of dynamical systems. More than 130 years later, his discovery is still being studied and helping humanity to explore the mysteries of space. We'll never forget you, Henri.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5in]{interior_exterior.png}
-    \caption{This figure shows a full mapping of the interior and exterior, stable and unstable, L$_1$ and L$_2$ Lagrange points to appropriate Poincar\'{e} sections \cite{KoonLoMarsdenRoss2011}.}
-    \label{f:interior_exterior}
+    \includegraphics[width=\textwidth]{conc_pic.png}
+    \caption{Figure (a) depicts a full mapping of the interior and exterior, stable and unstable, L$_1$ and L$_2$ Lagrange points to appropriate Poincar\'{e} sections \cite{KoonLoMarsdenRoss2011}. Figure (b) demonstrates that stable and unstable manifolds can be used to design tours of multi-body systems by riding the unstable manifold of one 3-body system to the stable manifold of another \cite{Gomez2004}.}
+    \label{fig:conc_pic}
 \end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=4in]{MoonTransfer.png}
-    \caption{An understanding of stable and unstable manifolds can be used to design tours of multi-body systems by riding the unstable manifold of one 3-body system to the stable manifold of another \cite{Gomez2004}.}
-    \label{fig:MoonTransfer}
-\end{figure}
-
-
-
 %===================================================================
 \newpage
 \bibliographystyle{plain}
