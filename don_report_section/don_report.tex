@@ -3,7 +3,7 @@
 \usepackage[margin=1.0in]{geometry}
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
-\graphicspath{{..../figures/}}
+\graphicspath{{../figures/}}
 \usepackage{amsmath, bm}
 \usepackage{color}
 \usepackage[utf8]{inputenc} % allows for é
@@ -432,7 +432,7 @@ In dynamical systems, periodic orbits are invariant sets (i.e., for each $x \in 
 \end{align}
 
 \noindent
-The eigenvalues of the Monodromy matrix determine the effect of small perturbations on a periodic orbit. If the real components of the eigenvalue are between -1 and 1, a perturbation in that direction will exponentially decay and the orbit is considered stable. Conversely, if the real components are outside of -1 and 1, a perturbation in that direction will exponentially grow and the orbit is considered unstable. If the eigenvalue is only imaginary, then the perturbation will oscillate about the original state after each period. Finally, if the eigenvalues are equal to 1, the perturbation does not grow or decay (unit eigenvalues are therefore normally ignored).
+The eigenvalues of the Monodromy matrix determine the effect of small perturbations on a periodic orbit. If the real components of the eigenvalue are between -1 and 1, a perturbation in that direction will exponentially decay and the orbit is considered stable. This is due to the fact that the eigenvalues of the Monodromy $M$ are related to the eigenvalues of the Jacobian matrix $Df$ as ($\lambda_i,1/\lambda_i$) = ($e^{\sigma t}, e^{-\sigma t}$), where $\sigma$ is the eigenvalue of $Df$. Conversely, if the real components are outside of -1 and 1, a perturbation in that direction will exponentially grow and the orbit is considered unstable. If the eigenvalue is only imaginary, then the perturbation will oscillate about the original state after each period. Finally, if the eigenvalues are equal to 1, the perturbation does not grow or decay (unit eigenvalues are therefore normally ignored).
 
 In order to map a stable or unstable manifold of a periodic orbit, the initial conditions of the orbit must be perturbed in the direction of the manifold (i.e., in the direction of the eigenvector corresponding to the manifold of interest). To fully map these manifolds, the periodic orbit needs to be perturbed at many points along its trajectory. This is accomplished by using the fundamental matrix to map the original stable or unstable eigenvector $\bm{v}^{S,U}$ from $M$ to any point on the periodic orbit (i.e., $\bm{v}_i^{S,U}=\Phi\left(t_i,t_0\right)\bm{v}^{S,U}$). The periodic orbit is then perturbed by a small amount ($\epsilon < 1\times10^{-4}$) in the direction of the mapped eigenvector (i.e., $\bm{x}_{i}^{S,U}=\bm{x}_{i}\pm\epsilon|\bm{v}_i^{S,U}|$). To see the shape of each manifold, the unstable manifold is then propagated forward in time while the stable manifold is propagated backwards in time. Each periodic orbit in the CR3BP has both interior and exterior stable and unstable manifolds depending on the sign of the applied perturbation. Figure \ref{f:manifolds} shows the exterior stable (green) and unstable (red) manifolds of a L$_2$ Lyapunov periodic orbit. As Figure \ref{f:manifolds} shows, these manifolds are intricate structures that extend far into the CR3BP phase space. 
 

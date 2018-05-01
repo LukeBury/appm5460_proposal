@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 APR 2018 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 MAY 2018 09:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,21 +654,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<../figures/CR3BP.png, id=15, 567.0786pt x 371.9496pt>
+File: ../figures/CR3BP.png Graphic file (type png)
 
-LaTeX Warning: File `CR3BP.png' not found on input line 50.
-
-
-! Package pdftex.def Error: File `CR3BP.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 	\includegraphics[width=4in]{CR3BP.png}
-                                            \nonumber
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use ../figures/CR3BP.png>
+Package pdftex.def Info: ../figures/CR3BP.png used on input line 50.
+(pdftex.def)             Requested size: 289.07999pt x 189.61232pt.
 
 
 LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 2 undefined on input li
@@ -682,185 +673,100 @@ ne 51.
 LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 2 undefined on input li
 ne 67.
 
-[2]
+[2 <../figures/CR3BP.png>]
+<../figures/zerovelocity_earthmoon.png, id=21, 458.6736pt x 398.4486pt>
+File: ../figures/zerovelocity_earthmoon.png Graphic file (type png)
 
-LaTeX Warning: File `zerovelocity_earthmoon.png' not found on input line 116.
-
-
-! Package pdftex.def Error: File `zerovelocity_earthmoon.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 ...cs[width=6in]{zerovelocity_earthmoon.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3] [4] [5] [6]
+<use ../figures/zerovelocity_earthmoon.png>
+Package pdftex.def Info: ../figures/zerovelocity_earthmoon.png used on input li
+ne 116.
+(pdftex.def)             Requested size: 433.62pt x 376.69398pt.
+ [3] [4 <../figures/zerovelocity_earthmoon.png>] [5] [6]
 
 LaTeX Warning: Citation `ScheersBook' on page 7 undefined on input line 285.
 
-[7]
 
-LaTeX Warning: Citation `MeyerandHallBook' on page 8 undefined on input line 29
+LaTeX Warning: Citation `MeyerandHallBook' on page 7 undefined on input line 29
 7.
 
-[8] [9]
+[7] [8]
 
-LaTeX Warning: Citation `SingleShooter' on page 10 undefined on input line 379.
+LaTeX Warning: Citation `SingleShooter' on page 9 undefined on input line 379.
 
+[9] <../figures/po_corrected.png, id=49, 789.6702pt x 345.9324pt>
+File: ../figures/po_corrected.png Graphic file (type png)
 
+<use ../figures/po_corrected.png>
+Package pdftex.def Info: ../figures/po_corrected.png used on input line 400.
+(pdftex.def)             Requested size: 433.62pt x 189.95724pt.
 
-LaTeX Warning: File `po_corrected.png' not found on input line 400.
+<../figures/lyapunov_po_comb.png, id=50, 690.4194pt x 523.7166pt>
+File: ../figures/lyapunov_po_comb.png Graphic file (type png)
 
+<use ../figures/lyapunov_po_comb.png>
+Package pdftex.def Info: ../figures/lyapunov_po_comb.png used on input line 410
+.
+(pdftex.def)             Requested size: 469.75502pt x 356.33034pt.
+ [10 <../figures/po_corrected.png>]
+<../figures/L1_clamshell_comb.png, id=55, 703.428pt x 528.5346pt>
+File: ../figures/L1_clamshell_comb.png Graphic file (type png)
 
-! Package pdftex.def Error: File `po_corrected.png' not found.
+<use ../figures/L1_clamshell_comb.png>
+Package pdftex.def Info: ../figures/L1_clamshell_comb.png used on input line 41
+7.
+(pdftex.def)             Requested size: 469.75502pt x 352.96309pt.
+ [11 <../figures/lyapunov_po_comb.png>]
+[12 <../figures/L1_clamshell_comb.png>]
+<../figures/manifold_comb.png, id=64, 883.1394pt x 344.9688pt>
+File: ../figures/manifold_comb.png Graphic file (type png)
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.400 ...ludegraphics[width=6in]{po_corrected.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use ../figures/manifold_comb.png>
+Package pdftex.def Info: ../figures/manifold_comb.png used on input line 441.
+(pdftex.def)             Requested size: 469.75502pt x 183.49582pt.
+ [13 <../figures/manifold_comb.png>]
+<../figures/poincare_comb.png, id=70, 700.5372pt x 526.6074pt>
+File: ../figures/poincare_comb.png Graphic file (type png)
 
-[10]
+<use ../figures/poincare_comb.png>
+Package pdftex.def Info: ../figures/poincare_comb.png used on input line 455.
+(pdftex.def)             Requested size: 469.75502pt x 353.12244pt.
+ [14 <../figures/poincare_comb.png>]
+<../figures/sym_homo_comb.png, id=75, 882.1758pt x 345.9324pt>
+File: ../figures/sym_homo_comb.png Graphic file (type png)
 
-LaTeX Warning: File `lyapunov_po_comb.png' not found on input line 410.
+<use ../figures/sym_homo_comb.png>
+Package pdftex.def Info: ../figures/sym_homo_comb.png used on input line 464.
+(pdftex.def)             Requested size: 469.75502pt x 184.20897pt.
 
+<../figures/asym_homo_comb.png, id=76, 882.1758pt x 345.9324pt>
+File: ../figures/asym_homo_comb.png Graphic file (type png)
 
-! Package pdftex.def Error: File `lyapunov_po_comb.png' not found.
+<use ../figures/asym_homo_comb.png>
+Package pdftex.def Info: ../figures/asym_homo_comb.png used on input line 471.
+(pdftex.def)             Requested size: 469.75502pt x 184.20897pt.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.410 ...s[width=\textwidth]{lyapunov_po_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[11]
-
-LaTeX Warning: File `L1_clamshell_comb.png' not found on input line 417.
-
-
-! Package pdftex.def Error: File `L1_clamshell_comb.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.417 ...[width=\textwidth]{L1_clamshell_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[12] [13]
-
-LaTeX Warning: File `manifold_comb.png' not found on input line 441.
-
-
-! Package pdftex.def Error: File `manifold_comb.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...hics[width=\textwidth]{manifold_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[14] [15]
-
-LaTeX Warning: File `poincare_comb.png' not found on input line 455.
-
-
-! Package pdftex.def Error: File `poincare_comb.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ...hics[width=\textwidth]{poincare_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[16]
-
-LaTeX Warning: File `sym_homo_comb.png' not found on input line 464.
-
-
-! Package pdftex.def Error: File `sym_homo_comb.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.464 ...hics[width=\textwidth]{sym_homo_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[17]
-
-LaTeX Warning: File `asym_homo_comb.png' not found on input line 471.
-
-
-! Package pdftex.def Error: File `asym_homo_comb.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.471 ...ics[width=\textwidth]{asym_homo_comb.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[18]
 Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
+<../figures/interior_exterior.png, id=77, 541.02126pt x 448.67625pt>
+File: ../figures/interior_exterior.png Graphic file (type png)
 
-LaTeX Warning: File `interior_exterior.png' not found on input line 484.
-
-
-! Package pdftex.def Error: File `interior_exterior.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.484 ...raphics[width=5in]{interior_exterior.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use ../figures/interior_exterior.png>
+Package pdftex.def Info: ../figures/interior_exterior.png used on input line 48
+4.
+(pdftex.def)             Requested size: 361.34999pt x 299.68044pt.
 
 
-LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 19 undefined on input l
+LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 15 undefined on input l
 ine 485.
 
 
-LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 19 undefined on input l
+LaTeX Warning: Citation `KoonLoMarsdenRoss2011' on page 15 undefined on input l
 ine 485.
 
-[19] [20]
+[15 <../figures/sym_homo_comb.png> <../figures/asym_homo_comb.png>] [16 <../fig
+ures/interior_exterior.png>]
 No file don_report.bbl.
 (./don_report.aux)
 
@@ -874,11 +780,11 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 309 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4450 strings out of 493014
- 63766 string characters out of 6133351
- 144713 words of memory out of 5000000
- 7904 multiletter control sequences out of 15000+600000
- 12952 words of font info for 46 fonts, out of 8000000 for 9000
+ 4488 strings out of 493014
+ 65138 string characters out of 6133351
+ 144709 words of memory out of 5000000
+ 7943 multiletter control sequences out of 15000+600000
+ 12784 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,40p,1779b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
@@ -893,12 +799,11 @@ r10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on don_report.pdf (20 pages, 203203 bytes).
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on don_report.pdf (16 pages, 3531636 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
