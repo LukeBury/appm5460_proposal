@@ -163,8 +163,6 @@ INPUT ../figures/sym_homo_comb.png
 INPUT ../figures/asym_homo_comb.png
 INPUT ../figures/asym_homo_comb.png
 INPUT ../figures/asym_homo_comb.png
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT ../figures/interior_exterior.png
 INPUT ../figures/interior_exterior.png
 INPUT ../figures/interior_exterior.png

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report5460"] 1525199482 "report5460.aux" "report5460.bbl" "report5460" 1525199485
+["bibtex report5460"] 1525200783 "report5460.aux" "report5460.bbl" "report5460" 1525201626
   "../bibliography/appm5460.bib" 1525199382 1213 6ea54c5b82babfeafc610c77cb26339f ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "report5460.aux" 1525199484 6345 12c3aebce11fe2a878882011cc8af0b2 ""
+  "report5460.aux" 1525201626 6345 5dfc528645209a74c5ac8c90452f2bee ""
   (generated)
-  "report5460.blg"
   "report5460.bbl"
-["pdflatex"] 1525199482 "report5460.tex" "report5460.pdf" "report5460" 1525199485
+  "report5460.blg"
+["pdflatex"] 1525201623 "report5460.tex" "report5460.pdf" "report5460" 1525201626
   "../figures/CR3BP.png" 1524845991 72497 acb147934a64c93ca01ae6167c179fc0 ""
   "../figures/L1_clamshell_comb.png" 1525132756 481328 9c1905e4406050dbb98516eab05d8e43 ""
   "../figures/MoonTransfer.png" 1525199135 216909 a16f956d8464d7ec47443e112d251d15 ""
@@ -79,7 +79,6 @@
   "/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty" 1480098820 2431 fe3078ec12fc30287f568596f8e0b948 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls" 1480098821 19821 310da678527a7dfe2a02c88af38079b7 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty" 1480098821 4732 d63eda807ac82cca2ca8488efd31a966 ""
-  "/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd" 1480098821 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu" 1487721667 2004 ac51aeac484f08c01026120d62677eca ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu" 1487721667 3181 1cb3e9ad01f4a01127b2ffd821bfeec7 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo" 1480098821 8308 f91506bb4df6d8527331f7bbeaf0e63c ""
@@ -110,10 +109,10 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "report5460.aux" 1525199484 6345 12c3aebce11fe2a878882011cc8af0b2 ""
-  "report5460.bbl" 1525199482 1046 d1ba2205bdb0856127c968598e85167d "bibtex report5460"
-  "report5460.tex" 1525199475 37939 a3c4730113c101aa3a33483c1c320a84 ""
+  "report5460.aux" 1525201626 6345 5dfc528645209a74c5ac8c90452f2bee ""
+  "report5460.bbl" 1525200783 1046 d1ba2205bdb0856127c968598e85167d "bibtex report5460"
+  "report5460.tex" 1525201623 39174 cd775668055b290ca12ce49050abca11 ""
   (generated)
-  "report5460.pdf"
   "report5460.aux"
   "report5460.log"
+  "report5460.pdf"

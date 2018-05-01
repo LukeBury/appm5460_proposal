@@ -494,9 +494,10 @@ Figure \ref{f:sym_homo}a takes a closer look at the intersection of the stable a
 
 %-------------------------------------------------------------------
 \section{Conclusion}
-\begin{itemize}
-	\item \color{red}{Homoclinic orbits are cool/interesting and super difficult to find. Can tell you a lot about the flow of a dynamical system. Realistically, can help target POs from far away. However,Heteroclinic orbits are useful fa show ... moving around a single system or even patching together for transfers. Bitch we out.}\color{black}
-\end{itemize}
+
+Although the process of identifying homoclinic orbits is highly involved and computationally expensive, it teaches us much about the intricacies of these dynamic systems. For example, in mission design, a complete understanding of periodic orbits is very helpful for designing trajectories with repeating ground-tracks that may be ideal for scientific investigation. Further, the stable and unstable manifolds of these periodic orbits can be used to target periodic orbits from far away, and for transporting a spacecraft around a system for very little $\Delta V$. Figure \ref{f:manifolds} makes this clear by illustrating both the interior and exterior manifolds of L$_1$ and L$_2$ periodic orbits. In the figure, trajectories connecting the manifolds at $U_1$ and $U_4$ are homoclinic orbits. However, the manifolds shown at $U_2$ and $U_3$ originate from different periodic orbits; trajectories connecting these manifolds are known as heteroclinic orbits. In addition to allowing a spacecraft to traverse a single 3-body system, stable and unstable manifolds from different 3-body systems can be patched together to create a strategy for exploring multi-body systems with minimal fuel use, as shown in Figure \ref{fig:MoonTransfer}.
+
+Henri Poincaré was ashamed for making such a critical mistake in his award-winning submission to Acta Mathematica, but in doing so he discovered homoclinic orbits and greatly expanded the field of dynamical systems. More than 130 years later, his discovery is still being studied and helping humanity to explore the mysteries of space. We'll never forget you, Henri.
 
 \begin{figure}[H]
     \centering
@@ -507,10 +508,12 @@ Figure \ref{f:sym_homo}a takes a closer look at the intersection of the stable a
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5in]{MoonTransfer.png}
+    \includegraphics[width=4in]{MoonTransfer.png}
     \caption{An understanding of stable and unstable manifolds can be used to design tours of multi-body systems by riding the unstable manifold of one 3-body system to the stable manifold of another \cite{Gomez2004}.}
     \label{fig:MoonTransfer}
 \end{figure}
+
+
 
 %===================================================================
 \newpage
