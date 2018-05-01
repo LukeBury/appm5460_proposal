@@ -133,8 +133,6 @@ OUTPUT report5460.pdf
 INPUT ../figures/homoclinic_orbit.png
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ../figures/curveIntersection1.png
 INPUT ../figures/curveIntersection1.png
 INPUT ../figures/curveIntersection1.png
